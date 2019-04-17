@@ -97,7 +97,6 @@ const createLiferayConfig = () => {
 			}),
 			'utf8'
 		);
-
 	})(appsAvailable);
 };
 

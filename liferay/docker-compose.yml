@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  liferay:
+    image: liferay/dxp:7.1.10.1
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./deploy:/etc/liferay/mount/deploy

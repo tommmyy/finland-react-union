@@ -34,8 +34,8 @@
   },
   "scripts": {
     "build": "yarn build:liferay && yarn build:wp",
-    "build:liferay": "react-union-scripts build --release --target liferay && node ./tools/amdLoaderScripts.js --release",
-    "build:wp": "react-union-scripts build  --target wp",
+    "build:liferay": "react-union-scripts build --target liferay && node ./tools/amdLoaderScripts.js",
+    "build:wp": "react-union-scripts build --target wp",
     "start": "react-union-scripts start --app app-demo",
     "start:wp": "yarn start --proxy --target wp",
     "start:liferay": "yarn start --proxy --target liferay",
