@@ -1,0 +1,32 @@
+version: '2'
+
+services:
+  wp:
+    build: .
+    ports:
+      - "8080:80"
+    environment:
+       WORDPRESS_DB_HOST: mysql:3306
+       WORDPRESS_DB_PASSWORD: wordpress
+       WORDPRESS_DB_USER: wordpress
+       WORDPRESS_DB_DATABASE: wordpress
+       WORDPRESS_SITE_URL: "localhost:8080"
+       WORDPRESS_SITE_DESCRIPTION: "When I grow up, I want to be a potato."
+       WORDPRESS_ADMIN_USER: admin
+       WORDPRESS_ADMIN_PASSWORD: adminadmin
+       WORDPRESS_ADMIN_EMAIL: tomaskonrady@gmail.com
+    volumes:
+      - ./theme:/var/www/html/wp-content/themes/my-theme
+
+  mysql:
+    image: mysql:5.7
+    volumes:
+       - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: wordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+
+volumes:
+  db_data:
