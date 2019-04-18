@@ -101,3 +101,18 @@ function create_my_custom_post() {
 	));
 }
 add_action('init', 'create_my_custom_post'); 
+
+
+function gutenberg_union() {
+    wp_register_script(
+        'gutenberg-union-widget-descriptor',
+        get_template_directory_uri().'/js/guttenbergUnionWidgetDescriptor.js',
+        array( 'wp-blocks', 'wp-element', 'wp-editor', 'wp-components' )
+    );
+
+    register_block_type( 'gutenberg-union/union', array(
+        'editor_script' => 'gutenberg-union-widget-descriptor',
+    ) );
+
+}
+add_action( 'init', 'gutenberg_union' );

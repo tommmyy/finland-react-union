@@ -1,6 +1,4 @@
     </div> <!-- /.container -->
-	<div id="hero-footer"></div>
-	<script type="application/json" data-union-widget="hero" data-union-container="hero-footer"></script>
 
 		<footer class="blog-footer">
       <p>
