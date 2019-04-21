@@ -1,0 +1,19 @@
+{
+	"name": "@finland/widget-songs-rating",
+	"version": "0.12.1",
+	"private": true,
+	"license": "UNLICENSED",
+	"engines": {
+		"node": ">=8"
+	},
+	"main": "src/index.js",
+	"dependencies": {
+		"@babel/polyfill": "^7.2.5",
+		"prop-types": "^15.7.2",
+		"react": "^16.8.3",
+		"react-dom": "^16.8.3"
+	},
+	"devDependencies": {
+		"enzyme": "^3.8.0"
+	}
+}

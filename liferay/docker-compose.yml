@@ -2,8 +2,8 @@ version: '2'
 
 services:
   liferay:
-    image: liferay/dxp:7.1.10.1
+    image: liferay/portal:7.1.2-ga3
     ports:
-      - "8080:8080"
+      - "8081:8080"
     volumes:
       - ./deploy:/etc/liferay/mount/deploy

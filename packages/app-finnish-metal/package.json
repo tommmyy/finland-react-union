@@ -1,5 +1,5 @@
 {
-  "name": "@finland/app-demo",
+  "name": "@finland/app-finnish-metal",
   "version": "0.12.1",
   "private": true,
   "license": "UNLICENSED",
@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
-    "@finland/widget-content": "^0.12.1",
-    "@finland/widget-hero": "^0.12.1",
+    "@finland/widget-songs-rating": "^0.12.1",
+    "@finland/widget-songs-overview": "^0.12.1",
     "document-ready": "^2.0.2",
     "prop-types": "^15.6.2",
     "react": "^16.8.3",

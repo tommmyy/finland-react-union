@@ -8,24 +8,21 @@ module.exports = ({ target, script }) => ({
 	sourceMaps: false,
 	...(target === 'wp'
 		? {
-				outputMapper: {
-					js: 'js',
-				},
 				proxy: {
 					port: 3300,
 				},
 				apps: [
 					{
-						name: 'app-demo',
-						publicPath: '/wp-content/themes/my-theme/app-demo/',
+						name: 'app-finnish-metal',
+						publicPath: '/wp-content/themes/my-theme/app-finnish-metal/',
 						proxy: {
 							target: 'http://localhost:8080',
-							publicPath: '/wp-content/themes/my-theme/app-demo/',
+							publicPath: '/wp-content/themes/my-theme/app-finnish-metal/',
 						},
 						paths:
 							script === 'build'
 								? {
-										build: path.join(__dirname, 'wordpress/theme/app-demo'),
+										build: path.join(__dirname, 'wordpress/theme/app-finnish-metal'),
 								  }
 								: {},
 					},
@@ -38,12 +35,15 @@ module.exports = ({ target, script }) => ({
 					js: 'js',
 					css: 'css',
 				},
+				proxy: {
+					port: 3301,
+				},
 				apps: [
 					{
-						name: 'app-demo',
+						name: 'app-finnish-metal',
 						publicPath: '/o/liferay-amd-loader/app-demo/',
 						proxy: {
-							target: 'http://localhost:8080',
+							target: 'http://localhost:8081',
 							publicPath: '/o/liferay-amd-loader/app-demo/',
 						},
 					},

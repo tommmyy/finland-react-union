@@ -37,7 +37,7 @@
     "build:liferay": "react-union-scripts build --target liferay && node ./tools/amdLoaderScripts.js",
     "build:wp": "yarn build:wp-block && react-union-scripts build --target wp",
     "build:wp-block": "babel ./wordpress/theme/src --out-dir ./wordpress/theme/js --root-mode upward",
-    "start": "react-union-scripts start --app app-demo",
+    "start": "react-union-scripts start --app app-finnish-metal",
     "start:wp": "yarn start --proxy --target wp",
     "start:liferay": "yarn start --proxy --target liferay",
     "test": "react-union-scripts test",

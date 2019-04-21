@@ -1,9 +1,0 @@
-{
-  "@finland/widget-content.js": "/wp-content/themes/my-theme/app-demo/js/@finland/widget-content.chunk.js",
-  "@finland/widget-hero.js": "/wp-content/themes/my-theme/app-demo/js/@finland/widget-hero.chunk.js",
-  "main.css": "/wp-content/themes/my-theme/app-demo/static/css/main.chunk.css",
-  "main.js": "/wp-content/themes/my-theme/app-demo/js/main.chunk.js",
-  "runtime.js": "/wp-content/themes/my-theme/app-demo/js/runtime.bundle.js",
-  "vendor.js": "/wp-content/themes/my-theme/app-demo/js/vendor.chunk.js",
-  "index.html": "/wp-content/themes/my-theme/app-demo/index.html"
-}

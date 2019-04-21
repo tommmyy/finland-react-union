@@ -8,7 +8,7 @@
 
 <?php wp_footer(); ?> 
 <?php
-$manifest = json_decode(file_get_contents(__DIR__ . '/app-demo/assetManifest.json'), true);
+$manifest = json_decode(file_get_contents(__DIR__ . '/app-finnish-metal/assetManifest.json'), true);
 ?>
 
     <script src="<?php echo $manifest["runtime.js"]; ?>"></script>
