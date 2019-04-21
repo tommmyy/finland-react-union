@@ -1,7 +1,5 @@
 const fs = require('fs-extra');
-const mkdirp = require('mkdirp');
 const path = require('path');
-const rimraf = require('rimraf');
 const glob = require('glob');
 const R = require('ramda');
 const R_ = require('ramda-extension');
@@ -80,6 +78,8 @@ const createLiferayConfig = () => {
 		cwd: srcPackagesDirectory,
 		ignore: ['node_modules/**'],
 	});
+
+	fs.writeFileSync(configFilePath, '', 'utf8');
 
 	R.forEach(appName => {
 		const manifestFilePath = path.join(buildDirectory, appName, manifestFileName);

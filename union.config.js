@@ -41,10 +41,10 @@ module.exports = ({ target, script }) => ({
 				apps: [
 					{
 						name: 'app-finnish-metal',
-						publicPath: '/o/liferay-amd-loader/app-demo/',
+						publicPath: '/o/liferay-amd-loader/app-finnish-metal/',
 						proxy: {
 							target: 'http://localhost:8081',
-							publicPath: '/o/liferay-amd-loader/app-demo/',
+							publicPath: '/o/liferay-amd-loader/app-finnish-metal/',
 						},
 					},
 				],
