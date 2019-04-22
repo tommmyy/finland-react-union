@@ -9,7 +9,10 @@
 	"main": "src/index.js",
 	"dependencies": {
 		"@babel/polyfill": "^7.2.5",
+		"isomorphic-fetch": "^2.2.1",
 		"prop-types": "^15.7.2",
+		"ramda": "^0.26.1",
+		"ramda-extension": "^0.7.2",
 		"react": "^16.8.3",
 		"react-dom": "^16.8.3"
 	},

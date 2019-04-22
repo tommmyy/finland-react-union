@@ -1,0 +1,1292 @@
+{
+  "tracks": [
+    {
+      "name": "While We Sleep",
+      "artist": "Insomnium",
+      "album": "Insomnium",
+      "image": "https://i.scdn.co/image/37ae5031fe0dceeab351684ee4f6525a28d58168",
+      "votes": {}
+    },
+    {
+      "name": "Here We Lie",
+      "artist": "Noumena",
+      "album": "Noumena",
+      "image": "https://i.scdn.co/image/2a60d67b3dbc9c03112675df03b1a655c9058c40",
+      "votes": {}
+    },
+    {
+      "name": "Angels Don't Kill",
+      "artist": "Children Of Bodom",
+      "album": "Children Of Bodom",
+      "image": "https://i.scdn.co/image/ddc1653511311b69e1674b9b441db4507bd1d918",
+      "votes": {}
+    },
+    {
+      "name": "Snow White Suicide",
+      "artist": "Entwine",
+      "album": "Entwine",
+      "image": "https://i.scdn.co/image/83a1c3ea65dfe3b2c37754b412ebb1a05d9dfc73",
+      "votes": {}
+    },
+    {
+      "name": "Crimson Twins",
+      "artist": "To/Die/For",
+      "album": "To/Die/For",
+      "image": "https://i.scdn.co/image/12383f05ce935efab61a478cfef7aeadc15dce53",
+      "votes": {}
+    },
+    {
+      "name": "Farewell",
+      "artist": "Sentenced",
+      "album": "Sentenced",
+      "image": "https://i.scdn.co/image/b35e5ac4d06ffa59ea090613637cfac12ebce034",
+      "votes": {}
+    },
+    {
+      "name": "Wanderer",
+      "artist": "Ensiferum",
+      "album": "Ensiferum",
+      "image": "https://i.scdn.co/image/b3256699a76a653ec94f8f5d4c81c808dc11c3a7",
+      "votes": {}
+    },
+    {
+      "name": "Framed In Blood - Remastered 2006",
+      "artist": "The 69 Eyes",
+      "album": "The 69 Eyes",
+      "image": "https://i.scdn.co/image/33296e9dff8ab9f4daa7384435aeb9ca9ac4ec34",
+      "votes": {}
+    },
+    {
+      "name": "The Chair - Remastered 2006",
+      "artist": "The 69 Eyes",
+      "album": "The 69 Eyes",
+      "image": "https://i.scdn.co/image/33296e9dff8ab9f4daa7384435aeb9ca9ac4ec34",
+      "votes": {}
+    },
+    {
+      "name": "Gothic Girl - Remastered 2006",
+      "artist": "The 69 Eyes",
+      "album": "The 69 Eyes",
+      "image": "https://i.scdn.co/image/33296e9dff8ab9f4daa7384435aeb9ca9ac4ec34",
+      "votes": {}
+    },
+    {
+      "name": "Brandon Lee - Remastered 2006",
+      "artist": "The 69 Eyes",
+      "album": "The 69 Eyes",
+      "image": "https://i.scdn.co/image/33296e9dff8ab9f4daa7384435aeb9ca9ac4ec34",
+      "votes": {}
+    },
+    {
+      "name": "Sleeping With Lions - Remastered 2006",
+      "artist": "The 69 Eyes",
+      "album": "The 69 Eyes",
+      "image": "https://i.scdn.co/image/33296e9dff8ab9f4daa7384435aeb9ca9ac4ec34",
+      "votes": {}
+    },
+    {
+      "name": "All-American Dream - Remastered 2006",
+      "artist": "The 69 Eyes",
+      "album": "The 69 Eyes",
+      "image": "https://i.scdn.co/image/67bcecf9e16a765439644fd039e0c6bdf5a39d7e",
+      "votes": {}
+    },
+    {
+      "name": "Next Stop Paradise - Remix",
+      "artist": "The 69 Eyes",
+      "album": "The 69 Eyes",
+      "image": "https://i.scdn.co/image/67bcecf9e16a765439644fd039e0c6bdf5a39d7e",
+      "votes": {}
+    },
+    {
+      "name": "Wrap Your Troubles In Dreams - Remastered 2006",
+      "artist": "The 69 Eyes",
+      "album": "The 69 Eyes",
+      "image": "https://i.scdn.co/image/16ee60d5253b4ab267999e3510dd6e2b1effac34",
+      "votes": {}
+    },
+    {
+      "name": "Gethsemane",
+      "artist": "Nightwish",
+      "album": "Nightwish",
+      "image": "https://i.scdn.co/image/37ad4a1f1d4fadb6fbaf80d1d3323f30b681debe",
+      "votes": {}
+    },
+    {
+      "name": "Sacrament Of Wilderness",
+      "artist": "Nightwish",
+      "album": "Nightwish",
+      "image": "https://i.scdn.co/image/37ad4a1f1d4fadb6fbaf80d1d3323f30b681debe",
+      "votes": {}
+    },
+    {
+      "name": "Passion And The Opera",
+      "artist": "Nightwish",
+      "album": "Nightwish",
+      "image": "https://i.scdn.co/image/37ad4a1f1d4fadb6fbaf80d1d3323f30b681debe",
+      "votes": {}
+    },
+    {
+      "name": "The Riddler",
+      "artist": "Nightwish",
+      "album": "Nightwish",
+      "image": "https://i.scdn.co/image/37ad4a1f1d4fadb6fbaf80d1d3323f30b681debe",
+      "votes": {}
+    },
+    {
+      "name": "Walking In The Air",
+      "artist": "Nightwish",
+      "album": "Nightwish",
+      "image": "https://i.scdn.co/image/37ad4a1f1d4fadb6fbaf80d1d3323f30b681debe",
+      "votes": {}
+    },
+    {
+      "name": "Nightquest",
+      "artist": "Nightwish",
+      "album": "Nightwish",
+      "image": "https://i.scdn.co/image/2f65411017c092163dacefd7d3fc5974994b39d3",
+      "votes": {}
+    },
+    {
+      "name": "The Wayfarer",
+      "artist": "Nightwish",
+      "album": "Nightwish",
+      "image": "https://i.scdn.co/image/2f65411017c092163dacefd7d3fc5974994b39d3",
+      "votes": {}
+    },
+    {
+      "name": "Dead Boy's Poem",
+      "artist": "Nightwish",
+      "album": "Nightwish",
+      "image": "https://i.scdn.co/image/22f6025d4243225cb5ca8243021d9a3fbc1cbd5e",
+      "votes": {}
+    },
+    {
+      "name": "Deep Silent Complete",
+      "artist": "Nightwish",
+      "album": "Nightwish",
+      "image": "https://i.scdn.co/image/22f6025d4243225cb5ca8243021d9a3fbc1cbd5e",
+      "votes": {}
+    },
+    {
+      "name": "Elvenpath",
+      "artist": "Nightwish",
+      "album": "Nightwish",
+      "image": "https://i.scdn.co/image/22f6025d4243225cb5ca8243021d9a3fbc1cbd5e",
+      "votes": {}
+    },
+    {
+      "name": "Ever Dream",
+      "artist": "Nightwish",
+      "album": "Nightwish",
+      "image": "https://i.scdn.co/image/22f6025d4243225cb5ca8243021d9a3fbc1cbd5e",
+      "votes": {}
+    },
+    {
+      "name": "The Kinslayer",
+      "artist": "Nightwish",
+      "album": "Nightwish",
+      "image": "https://i.scdn.co/image/22f6025d4243225cb5ca8243021d9a3fbc1cbd5e",
+      "votes": {}
+    },
+    {
+      "name": "Love's Not Made for My Kind",
+      "artist": "Tarot",
+      "album": "Tarot",
+      "image": "https://i.scdn.co/image/862492310a2d25aa441e41a77b50bb5001496357",
+      "votes": {}
+    },
+    {
+      "name": "Pyre Of Gods",
+      "artist": "Tarot",
+      "album": "Tarot",
+      "image": "https://i.scdn.co/image/d2bafa6907ab8ef42b3d63054f9394ffe1871d6a",
+      "votes": {}
+    },
+    {
+      "name": "Hard Rock Hallelujah",
+      "artist": "Lordi",
+      "album": "Lordi",
+      "image": "https://i.scdn.co/image/30be6743e2e40b93d034b2ff825846fb403dc0c4",
+      "votes": {}
+    },
+    {
+      "name": "Devil Is A Loser",
+      "artist": "Lordi",
+      "album": "Lordi",
+      "image": "https://i.scdn.co/image/711bd1e676278f0a80c02273d723c2eeb0657dbe",
+      "votes": {}
+    },
+    {
+      "name": "They Only Come Out At Night",
+      "artist": "Lordi",
+      "album": "Lordi",
+      "image": "https://i.scdn.co/image/30be6743e2e40b93d034b2ff825846fb403dc0c4",
+      "votes": {}
+    },
+    {
+      "name": "The Kids Who Wanna Play With The Dead",
+      "artist": "Lordi",
+      "album": "Lordi",
+      "image": "https://i.scdn.co/image/30be6743e2e40b93d034b2ff825846fb403dc0c4",
+      "votes": {}
+    },
+    {
+      "name": "Touch Like Angel Of Death - Live In Japan",
+      "artist": "Children Of Bodom",
+      "album": "Children Of Bodom",
+      "image": "https://i.scdn.co/image/35e5cc900ed8aa5820aa083347631c7a4d320cab",
+      "votes": {}
+    },
+    {
+      "name": "Lake Bodom",
+      "artist": "Children Of Bodom",
+      "album": "Children Of Bodom",
+      "image": "https://i.scdn.co/image/849d9f84e1ee0c60218d3b15e60b54ab20184153",
+      "votes": {}
+    },
+    {
+      "name": "Touch Like Angel Of Death",
+      "artist": "Children Of Bodom",
+      "album": "Children Of Bodom",
+      "image": "https://i.scdn.co/image/849d9f84e1ee0c60218d3b15e60b54ab20184153",
+      "votes": {}
+    },
+    {
+      "name": "Kissing The Shadows",
+      "artist": "Children Of Bodom",
+      "album": "Children Of Bodom",
+      "image": "https://i.scdn.co/image/249ae7a9dd4b67e2e8d14084d61133091abf6f5f",
+      "votes": {}
+    },
+    {
+      "name": "Hate Me",
+      "artist": "Children Of Bodom",
+      "album": "Children Of Bodom",
+      "image": "https://i.scdn.co/image/249ae7a9dd4b67e2e8d14084d61133091abf6f5f",
+      "votes": {}
+    },
+    {
+      "name": "Mask Of Sanity",
+      "artist": "Children Of Bodom",
+      "album": "Children Of Bodom",
+      "image": "https://i.scdn.co/image/249ae7a9dd4b67e2e8d14084d61133091abf6f5f",
+      "votes": {}
+    },
+    {
+      "name": "Everytime I Die",
+      "artist": "Children Of Bodom",
+      "album": "Children Of Bodom",
+      "image": "https://i.scdn.co/image/249ae7a9dd4b67e2e8d14084d61133091abf6f5f",
+      "votes": {}
+    },
+    {
+      "name": "Children Of Decadence",
+      "artist": "Children Of Bodom",
+      "album": "Children Of Bodom",
+      "image": "https://i.scdn.co/image/249ae7a9dd4b67e2e8d14084d61133091abf6f5f",
+      "votes": {}
+    },
+    {
+      "name": "Bodom After Midnight",
+      "artist": "Children Of Bodom",
+      "album": "Children Of Bodom",
+      "image": "https://i.scdn.co/image/249ae7a9dd4b67e2e8d14084d61133091abf6f5f",
+      "votes": {}
+    },
+    {
+      "name": "Children Of Bodom",
+      "artist": "Children Of Bodom",
+      "album": "Children Of Bodom",
+      "image": "https://i.scdn.co/image/d2fb666be86baddca16d61ef1f0a0b4d863ecb88",
+      "votes": {}
+    },
+    {
+      "name": "Silent Night, Bodom Night",
+      "artist": "Children Of Bodom",
+      "album": "Children Of Bodom",
+      "image": "https://i.scdn.co/image/d2fb666be86baddca16d61ef1f0a0b4d863ecb88",
+      "votes": {}
+    },
+    {
+      "name": "Towards Dead End",
+      "artist": "Children Of Bodom",
+      "album": "Children Of Bodom",
+      "image": "https://i.scdn.co/image/d2fb666be86baddca16d61ef1f0a0b4d863ecb88",
+      "votes": {}
+    },
+    {
+      "name": "Bed Of Razors",
+      "artist": "Children Of Bodom",
+      "album": "Children Of Bodom",
+      "image": "https://i.scdn.co/image/d2fb666be86baddca16d61ef1f0a0b4d863ecb88",
+      "votes": {}
+    },
+    {
+      "name": "Needled 24 / 7",
+      "artist": "Children Of Bodom",
+      "album": "Children Of Bodom",
+      "image": "https://i.scdn.co/image/ddc1653511311b69e1674b9b441db4507bd1d918",
+      "votes": {}
+    },
+    {
+      "name": "Bodom Beach Terror",
+      "artist": "Children Of Bodom",
+      "album": "Children Of Bodom",
+      "image": "https://i.scdn.co/image/ddc1653511311b69e1674b9b441db4507bd1d918",
+      "votes": {}
+    },
+    {
+      "name": "Lost Boys",
+      "artist": "The 69 Eyes",
+      "album": "The 69 Eyes",
+      "image": "https://i.scdn.co/image/780e39500ef7f65b64a12a87f23aac68dd1346f9",
+      "votes": {}
+    },
+    {
+      "name": "Beyond The Dark Sun",
+      "artist": "Wintersun",
+      "album": "Wintersun",
+      "image": "https://i.scdn.co/image/a75ffd4d080c3d9ad3698502eb0449400c3a3299",
+      "votes": {}
+    },
+    {
+      "name": "House Of Sleep",
+      "artist": "Amorphis",
+      "album": "Amorphis",
+      "image": "https://i.scdn.co/image/807e027b7e1cd6602fa9a5223efe3ec2e2fe6a6f",
+      "votes": {}
+    },
+    {
+      "name": "Black Winter Day",
+      "artist": "Amorphis",
+      "album": "Amorphis",
+      "image": "https://i.scdn.co/image/f770ee891d9a0c86fb63409cd17896950d5144f2",
+      "votes": {}
+    },
+    {
+      "name": "My Enemy",
+      "artist": "Amorphis",
+      "album": "Amorphis",
+      "image": "https://i.scdn.co/image/ee116343426166c7e573b1f23902e1bc9f184657",
+      "votes": {}
+    },
+    {
+      "name": "You I Need",
+      "artist": "Amorphis",
+      "album": "Amorphis",
+      "image": "https://i.scdn.co/image/ee116343426166c7e573b1f23902e1bc9f184657",
+      "votes": {}
+    },
+    {
+      "name": "The Smoke",
+      "artist": "Amorphis",
+      "album": "Amorphis",
+      "image": "https://i.scdn.co/image/807e027b7e1cd6602fa9a5223efe3ec2e2fe6a6f",
+      "votes": {}
+    },
+    {
+      "name": "Straight to the Heart",
+      "artist": "Battle Beast",
+      "album": "Battle Beast",
+      "image": "https://i.scdn.co/image/e097d0204302feb92a7ac044b32a46c3517a1080",
+      "votes": {}
+    },
+    {
+      "name": "King for a Day",
+      "artist": "Battle Beast",
+      "album": "Battle Beast",
+      "image": "https://i.scdn.co/image/e097d0204302feb92a7ac044b32a46c3517a1080",
+      "votes": {}
+    },
+    {
+      "name": "Beyond the Burning Skies",
+      "artist": "Battle Beast",
+      "album": "Battle Beast",
+      "image": "https://i.scdn.co/image/e097d0204302feb92a7ac044b32a46c3517a1080",
+      "votes": {}
+    },
+    {
+      "name": "Familiar Hell",
+      "artist": "Battle Beast",
+      "album": "Battle Beast",
+      "image": "https://i.scdn.co/image/e097d0204302feb92a7ac044b32a46c3517a1080",
+      "votes": {}
+    },
+    {
+      "name": "Lost in Wars",
+      "artist": "Battle Beast",
+      "album": "Battle Beast",
+      "image": "https://i.scdn.co/image/e097d0204302feb92a7ac044b32a46c3517a1080",
+      "votes": {}
+    },
+    {
+      "name": "Bastard Son of Odin",
+      "artist": "Battle Beast",
+      "album": "Battle Beast",
+      "image": "https://i.scdn.co/image/e097d0204302feb92a7ac044b32a46c3517a1080",
+      "votes": {}
+    },
+    {
+      "name": "Black Ninja",
+      "artist": "Battle Beast",
+      "album": "Battle Beast",
+      "image": "https://i.scdn.co/image/f70dad94e9e4dfc000f1d5377e53a8eec6e76364",
+      "votes": {}
+    },
+    {
+      "name": "Touch in the Night",
+      "artist": "Battle Beast",
+      "album": "Battle Beast",
+      "image": "https://i.scdn.co/image/5d985cebf019abc620fb46e371c4bb464ecec473",
+      "votes": {}
+    },
+    {
+      "name": "Iron Hand",
+      "artist": "Battle Beast",
+      "album": "Battle Beast",
+      "image": "https://i.scdn.co/image/5e2748640bbe454999c953475a2eea8b611b2288",
+      "votes": {}
+    },
+    {
+      "name": "Trollhammaren",
+      "artist": "Finntroll",
+      "album": "Finntroll",
+      "image": "https://i.scdn.co/image/2174277106680d1c086717c0919caee844cc3741",
+      "votes": {}
+    },
+    {
+      "name": "Don´t Touch The Flame - Remastered",
+      "artist": "Lullacry",
+      "album": "Lullacry",
+      "image": "https://i.scdn.co/image/234532b4ab83adf6c43e04a1f94ab299642e7a66",
+      "votes": {}
+    },
+    {
+      "name": "Dead Leaves",
+      "artist": "Sentenced",
+      "album": "Sentenced",
+      "image": "https://i.scdn.co/image/b35e5ac4d06ffa59ea090613637cfac12ebce034",
+      "votes": {}
+    },
+    {
+      "name": "The Suicider",
+      "artist": "Sentenced",
+      "album": "Sentenced",
+      "image": "https://i.scdn.co/image/b35e5ac4d06ffa59ea090613637cfac12ebce034",
+      "votes": {}
+    },
+    {
+      "name": "Drown Together",
+      "artist": "Sentenced",
+      "album": "Sentenced",
+      "image": "https://i.scdn.co/image/b35e5ac4d06ffa59ea090613637cfac12ebce034",
+      "votes": {}
+    },
+    {
+      "name": "Killing Me Killing You",
+      "artist": "Sentenced",
+      "album": "Sentenced",
+      "image": "https://i.scdn.co/image/2fbb1eb9f17cf487b8589960e536e2cfd3de009b",
+      "votes": {}
+    },
+    {
+      "name": "My Land",
+      "artist": "Sonata Arctica",
+      "album": "Sonata Arctica",
+      "image": "https://i.scdn.co/image/c1ef566ef951a400349e691abd06dc2f03b2cc86",
+      "votes": {}
+    },
+    {
+      "name": "Replica",
+      "artist": "Sonata Arctica",
+      "album": "Sonata Arctica",
+      "image": "https://i.scdn.co/image/c1ef566ef951a400349e691abd06dc2f03b2cc86",
+      "votes": {}
+    },
+    {
+      "name": "Kingdom For A Heart",
+      "artist": "Sonata Arctica",
+      "album": "Sonata Arctica",
+      "image": "https://i.scdn.co/image/c1ef566ef951a400349e691abd06dc2f03b2cc86",
+      "votes": {}
+    },
+    {
+      "name": "Letter To Dana",
+      "artist": "Sonata Arctica",
+      "album": "Sonata Arctica",
+      "image": "https://i.scdn.co/image/c1ef566ef951a400349e691abd06dc2f03b2cc86",
+      "votes": {}
+    },
+    {
+      "name": "UnOpened",
+      "artist": "Sonata Arctica",
+      "album": "Sonata Arctica",
+      "image": "https://i.scdn.co/image/c1ef566ef951a400349e691abd06dc2f03b2cc86",
+      "votes": {}
+    },
+    {
+      "name": "Mary-Lou",
+      "artist": "Sonata Arctica",
+      "album": "Sonata Arctica",
+      "image": "https://i.scdn.co/image/c1ef566ef951a400349e691abd06dc2f03b2cc86",
+      "votes": {}
+    },
+    {
+      "name": "Peacemaker",
+      "artist": "Sonata Arctica",
+      "album": "Sonata Arctica",
+      "image": "https://i.scdn.co/image/65ea9a6660d7161bc188d2f5210a17b2533e4c69",
+      "votes": {}
+    },
+    {
+      "name": "The Power Of One",
+      "artist": "Sonata Arctica",
+      "album": "Sonata Arctica",
+      "image": "https://i.scdn.co/image/65ea9a6660d7161bc188d2f5210a17b2533e4c69",
+      "votes": {}
+    },
+    {
+      "name": "Tallulah",
+      "artist": "Sonata Arctica",
+      "album": "Sonata Arctica",
+      "image": "https://i.scdn.co/image/65ea9a6660d7161bc188d2f5210a17b2533e4c69",
+      "votes": {}
+    },
+    {
+      "name": "Respect The Wilderness",
+      "artist": "Sonata Arctica",
+      "album": "Sonata Arctica",
+      "image": "https://i.scdn.co/image/65ea9a6660d7161bc188d2f5210a17b2533e4c69",
+      "votes": {}
+    },
+    {
+      "name": "Sing In Silence",
+      "artist": "Sonata Arctica",
+      "album": "Sonata Arctica",
+      "image": "https://i.scdn.co/image/65ea9a6660d7161bc188d2f5210a17b2533e4c69",
+      "votes": {}
+    },
+    {
+      "name": "Last Drop Falls",
+      "artist": "Sonata Arctica",
+      "album": "Sonata Arctica",
+      "image": "https://i.scdn.co/image/65ea9a6660d7161bc188d2f5210a17b2533e4c69",
+      "votes": {}
+    },
+    {
+      "name": "The End Of This Chapter",
+      "artist": "Sonata Arctica",
+      "album": "Sonata Arctica",
+      "image": "https://i.scdn.co/image/65ea9a6660d7161bc188d2f5210a17b2533e4c69",
+      "votes": {}
+    },
+    {
+      "name": "False News Travel Fast",
+      "artist": "Sonata Arctica",
+      "album": "Sonata Arctica",
+      "image": "https://i.scdn.co/image/65ea9a6660d7161bc188d2f5210a17b2533e4c69",
+      "votes": {}
+    },
+    {
+      "name": "Silver Tongue",
+      "artist": "Sonata Arctica",
+      "album": "Sonata Arctica",
+      "image": "https://i.scdn.co/image/44d60cfad31b08b9f4afbf2f074a2d28e4eb696d",
+      "votes": {}
+    },
+    {
+      "name": "Broken",
+      "artist": "Sonata Arctica",
+      "album": "Sonata Arctica",
+      "image": "https://i.scdn.co/image/44d60cfad31b08b9f4afbf2f074a2d28e4eb696d",
+      "votes": {}
+    },
+    {
+      "name": "Shy",
+      "artist": "Sonata Arctica",
+      "album": "Sonata Arctica",
+      "image": "https://i.scdn.co/image/03c16568d55b4af8d322759115b2c6659b625e65",
+      "votes": {}
+    },
+    {
+      "name": "The Gun",
+      "artist": "Sonata Arctica",
+      "album": "Sonata Arctica",
+      "image": "https://i.scdn.co/image/03c16568d55b4af8d322759115b2c6659b625e65",
+      "votes": {}
+    },
+    {
+      "name": "Still Loving You",
+      "artist": "Sonata Arctica",
+      "album": "Sonata Arctica",
+      "image": "https://i.scdn.co/image/03c16568d55b4af8d322759115b2c6659b625e65",
+      "votes": {}
+    },
+    {
+      "name": "Taivas lyö tulta",
+      "artist": "Teräsbetoni",
+      "album": "Teräsbetoni",
+      "image": "https://i.scdn.co/image/cb6f40cf5aa7993908c2bf21abc1f63ff2feb957",
+      "votes": {}
+    },
+    {
+      "name": "Orjatar",
+      "artist": "Teräsbetoni",
+      "album": "Teräsbetoni",
+      "image": "https://i.scdn.co/image/cb6f40cf5aa7993908c2bf21abc1f63ff2feb957",
+      "votes": {}
+    },
+    {
+      "name": "Älä kerro meille",
+      "artist": "Teräsbetoni",
+      "album": "Teräsbetoni",
+      "image": "https://i.scdn.co/image/cb6f40cf5aa7993908c2bf21abc1f63ff2feb957",
+      "votes": {}
+    },
+    {
+      "name": "Suomi sata vuotta",
+      "artist": "Timo Rautiainen & Trio Niskalaukaus",
+      "album": "Timo Rautiainen & Trio Niskalaukaus",
+      "image": "https://i.scdn.co/image/dceeb493aab573d40e311205a684ff3d74019404",
+      "votes": {}
+    },
+    {
+      "name": "Lumessakahlaajat",
+      "artist": "Timo Rautiainen & Trio Niskalaukaus",
+      "album": "Timo Rautiainen & Trio Niskalaukaus",
+      "image": "https://i.scdn.co/image/f08a323212141b2e45ab678a3ac21c93b4a57e12",
+      "votes": {}
+    },
+    {
+      "name": "Elegia",
+      "artist": "Timo Rautiainen & Trio Niskalaukaus",
+      "album": "Timo Rautiainen & Trio Niskalaukaus",
+      "image": "https://i.scdn.co/image/f08a323212141b2e45ab678a3ac21c93b4a57e12",
+      "votes": {}
+    },
+    {
+      "name": "Viimeinen Päivä Taivaan? - Single Version",
+      "artist": "Timo Rautiainen & Trio Niskalaukaus",
+      "album": "Timo Rautiainen & Trio Niskalaukaus",
+      "image": "https://i.scdn.co/image/f08a323212141b2e45ab678a3ac21c93b4a57e12",
+      "votes": {}
+    },
+    {
+      "name": "Rajaton Rakkaus",
+      "artist": "Timo Rautiainen & Trio Niskalaukaus",
+      "album": "Timo Rautiainen & Trio Niskalaukaus",
+      "image": "https://i.scdn.co/image/f08a323212141b2e45ab678a3ac21c93b4a57e12",
+      "votes": {}
+    },
+    {
+      "name": "Together Complete",
+      "artist": "To/Die/For",
+      "album": "To/Die/For",
+      "image": "https://i.scdn.co/image/05fe6435d17c676b56ceeec71de1ccb4a9784d44",
+      "votes": {}
+    },
+    {
+      "name": "Loveless",
+      "artist": "To/Die/For",
+      "album": "To/Die/For",
+      "image": "https://i.scdn.co/image/05fe6435d17c676b56ceeec71de1ccb4a9784d44",
+      "votes": {}
+    },
+    {
+      "name": "Dripping Down Red",
+      "artist": "To/Die/For",
+      "album": "To/Die/For",
+      "image": "https://i.scdn.co/image/05fe6435d17c676b56ceeec71de1ccb4a9784d44",
+      "votes": {}
+    },
+    {
+      "name": "Live In You",
+      "artist": "To/Die/For",
+      "album": "To/Die/For",
+      "image": "https://i.scdn.co/image/05fe6435d17c676b56ceeec71de1ccb4a9784d44",
+      "votes": {}
+    },
+    {
+      "name": "Farewell",
+      "artist": "To/Die/For",
+      "album": "To/Die/For",
+      "image": "https://i.scdn.co/image/05fe6435d17c676b56ceeec71de1ccb4a9784d44",
+      "votes": {}
+    },
+    {
+      "name": "Immortal Love",
+      "artist": "To/Die/For",
+      "album": "To/Die/For",
+      "image": "https://i.scdn.co/image/12383f05ce935efab61a478cfef7aeadc15dce53",
+      "votes": {}
+    },
+    {
+      "name": "In Solitude",
+      "artist": "To/Die/For",
+      "album": "To/Die/For",
+      "image": "https://i.scdn.co/image/12383f05ce935efab61a478cfef7aeadc15dce53",
+      "votes": {}
+    },
+    {
+      "name": "The Unknown",
+      "artist": "To/Die/For",
+      "album": "To/Die/For",
+      "image": "https://i.scdn.co/image/12383f05ce935efab61a478cfef7aeadc15dce53",
+      "votes": {}
+    },
+    {
+      "name": "Vale Of Tears",
+      "artist": "To/Die/For",
+      "album": "To/Die/For",
+      "image": "https://i.scdn.co/image/12383f05ce935efab61a478cfef7aeadc15dce53",
+      "votes": {}
+    },
+    {
+      "name": "Hollow Heart",
+      "artist": "To/Die/For",
+      "album": "To/Die/For",
+      "image": "https://i.scdn.co/image/12383f05ce935efab61a478cfef7aeadc15dce53",
+      "votes": {}
+    },
+    {
+      "name": "Rasputin",
+      "artist": "Turisas",
+      "album": "Turisas",
+      "image": "https://i.scdn.co/image/0e11d65d828aa96f140859ba7ed448c3c9fd9d3d",
+      "votes": {}
+    },
+    {
+      "name": "Stand Up and Fight",
+      "artist": "Turisas",
+      "album": "Turisas",
+      "image": "https://i.scdn.co/image/d3ca526691bfec01c1fe1c940416c5a011adec23",
+      "votes": {}
+    },
+    {
+      "name": "Battle Metal",
+      "artist": "Turisas",
+      "album": "Turisas",
+      "image": "https://i.scdn.co/image/0d7f9be2072d4d63007e1eda5137a68e73fdeb7c",
+      "votes": {}
+    },
+    {
+      "name": "Somebody's Watching Me",
+      "artist": "Warmen",
+      "album": "Warmen",
+      "image": "https://i.scdn.co/image/432fa87e7b88e11167e95d77d640ded66b2acc45",
+      "votes": {}
+    },
+    {
+      "name": "Man Behind The Mask (feat. Alexi Laiho)",
+      "artist": "Warmen",
+      "album": "Warmen",
+      "image": "https://i.scdn.co/image/bb76dc8fb323e9172d8c35e54508c812a11be4cc",
+      "votes": {}
+    },
+    {
+      "name": "Like A Virgin (feat. Jonna Geagea)",
+      "artist": "Warmen",
+      "album": "Warmen",
+      "image": "https://i.scdn.co/image/bb76dc8fb323e9172d8c35e54508c812a11be4cc",
+      "votes": {}
+    },
+    {
+      "name": "Pakanajuhla",
+      "artist": "Moonsorrow",
+      "album": "Moonsorrow",
+      "image": "https://i.scdn.co/image/4a42787ce52cc40a0b0e3372e10a569c07f82039",
+      "votes": {}
+    },
+    {
+      "name": "Sankarihauta",
+      "artist": "Moonsorrow",
+      "album": "Moonsorrow",
+      "image": "https://i.scdn.co/image/802cdd9a26cfa66472e44a37f4cf5e6570f2bf53",
+      "votes": {}
+    },
+    {
+      "name": "Kuin ikuinen",
+      "artist": "Moonsorrow",
+      "album": "Moonsorrow",
+      "image": "https://i.scdn.co/image/4a42787ce52cc40a0b0e3372e10a569c07f82039",
+      "votes": {}
+    },
+    {
+      "name": "The End Of The Century",
+      "artist": "Noumena",
+      "album": "Noumena",
+      "image": "https://i.scdn.co/image/2a60d67b3dbc9c03112675df03b1a655c9058c40",
+      "votes": {}
+    },
+    {
+      "name": "Everlasting Ward",
+      "artist": "Noumena",
+      "album": "Noumena",
+      "image": "https://i.scdn.co/image/2a60d67b3dbc9c03112675df03b1a655c9058c40",
+      "votes": {}
+    },
+    {
+      "name": "Slain Memories",
+      "artist": "Noumena",
+      "album": "Noumena",
+      "image": "https://i.scdn.co/image/2a60d67b3dbc9c03112675df03b1a655c9058c40",
+      "votes": {}
+    },
+    {
+      "name": "A Day To Depart",
+      "artist": "Noumena",
+      "album": "Noumena",
+      "image": "https://i.scdn.co/image/2a60d67b3dbc9c03112675df03b1a655c9058c40",
+      "votes": {}
+    },
+    {
+      "name": "The Dream And The Escape",
+      "artist": "Noumena",
+      "album": "Noumena",
+      "image": "https://i.scdn.co/image/2a60d67b3dbc9c03112675df03b1a655c9058c40",
+      "votes": {}
+    },
+    {
+      "name": "The Great Anonymous Doom",
+      "artist": "Noumena",
+      "album": "Noumena",
+      "image": "https://i.scdn.co/image/2a60d67b3dbc9c03112675df03b1a655c9058c40",
+      "votes": {}
+    },
+    {
+      "name": "Sons Of Riddermark",
+      "artist": "Battlelore",
+      "album": "Battlelore",
+      "image": "https://i.scdn.co/image/a179da52d126ff9a1e28290a7e3ab92b6a509258",
+      "votes": {}
+    },
+    {
+      "name": "Third Immortal",
+      "artist": "Battlelore",
+      "album": "Battlelore",
+      "image": "https://i.scdn.co/image/3dcec177dd44f216942d1697a453f47c0b96c8dc",
+      "votes": {}
+    },
+    {
+      "name": "Buccaneers Inn",
+      "artist": "Battlelore",
+      "album": "Battlelore",
+      "image": "https://i.scdn.co/image/a179da52d126ff9a1e28290a7e3ab92b6a509258",
+      "votes": {}
+    },
+    {
+      "name": "Sword's Song",
+      "artist": "Battlelore",
+      "album": "Battlelore",
+      "image": "https://i.scdn.co/image/a179da52d126ff9a1e28290a7e3ab92b6a509258",
+      "votes": {}
+    },
+    {
+      "name": "Vodka",
+      "artist": "Korpiklaani",
+      "album": "Korpiklaani",
+      "image": "https://i.scdn.co/image/4252efa9af142aa1f07421bcf25c7b87f39c83cd",
+      "votes": {}
+    },
+    {
+      "name": "Love Is Not Enough",
+      "artist": "Brother Firetribe",
+      "album": "Brother Firetribe",
+      "image": "https://i.scdn.co/image/4e6d8f5898149c22ba2cf679e0174134db54f0ee",
+      "votes": {}
+    },
+    {
+      "name": "For Better Or For Worse",
+      "artist": "Brother Firetribe",
+      "album": "Brother Firetribe",
+      "image": "https://i.scdn.co/image/4e6d8f5898149c22ba2cf679e0174134db54f0ee",
+      "votes": {}
+    },
+    {
+      "name": "Edge Of Forever",
+      "artist": "Brother Firetribe",
+      "album": "Brother Firetribe",
+      "image": "https://i.scdn.co/image/4e6d8f5898149c22ba2cf679e0174134db54f0ee",
+      "votes": {}
+    },
+    {
+      "name": "Winner Takes It All",
+      "artist": "Brother Firetribe",
+      "album": "Brother Firetribe",
+      "image": "https://i.scdn.co/image/4e6d8f5898149c22ba2cf679e0174134db54f0ee",
+      "votes": {}
+    },
+    {
+      "name": "Who Will You Run To Now",
+      "artist": "Brother Firetribe",
+      "album": "Brother Firetribe",
+      "image": "https://i.scdn.co/image/e165f6bc387e3596d207a39dda9ba67d08e800b9",
+      "votes": {}
+    },
+    {
+      "name": "Game They Call Love",
+      "artist": "Brother Firetribe",
+      "album": "Brother Firetribe",
+      "image": "https://i.scdn.co/image/e165f6bc387e3596d207a39dda9ba67d08e800b9",
+      "votes": {}
+    },
+    {
+      "name": "Heart Full Of Fire",
+      "artist": "Brother Firetribe",
+      "album": "Brother Firetribe",
+      "image": "https://i.scdn.co/image/e165f6bc387e3596d207a39dda9ba67d08e800b9",
+      "votes": {}
+    },
+    {
+      "name": "Going Out With A Bang",
+      "artist": "Brother Firetribe",
+      "album": "Brother Firetribe",
+      "image": "https://i.scdn.co/image/e165f6bc387e3596d207a39dda9ba67d08e800b9",
+      "votes": {}
+    },
+    {
+      "name": "Colder",
+      "artist": "Charon",
+      "album": "Charon",
+      "image": "https://i.scdn.co/image/800d45163ab4481ad032598a99076b28a9dbf9d3",
+      "votes": {}
+    },
+    {
+      "name": "Little Angel",
+      "artist": "Charon",
+      "album": "Charon",
+      "image": "https://i.scdn.co/image/800d45163ab4481ad032598a99076b28a9dbf9d3",
+      "votes": {}
+    },
+    {
+      "name": "Wings of A Butterfly",
+      "artist": "HIM",
+      "album": "HIM",
+      "image": "https://i.scdn.co/image/e833b74d77a97c8177970ea846afe46cde4b584c",
+      "votes": {}
+    },
+    {
+      "name": "Wicked Game",
+      "artist": "HIM",
+      "album": "HIM",
+      "image": "https://i.scdn.co/image/08bd2c8f06ad2917fffcd14ba336cb29a0a2b29d",
+      "votes": {}
+    },
+    {
+      "name": "Right Here In My Arms",
+      "artist": "HIM",
+      "album": "HIM",
+      "image": "https://i.scdn.co/image/9c20e65f8e2b4b8d743561775833d8b1011df992",
+      "votes": {}
+    },
+    {
+      "name": "Join Me - Razorblade Mix",
+      "artist": "HIM",
+      "album": "HIM",
+      "image": "https://i.scdn.co/image/9c20e65f8e2b4b8d743561775833d8b1011df992",
+      "votes": {}
+    },
+    {
+      "name": "History of Times to Come",
+      "artist": "Altaria",
+      "album": "Altaria",
+      "image": "https://i.scdn.co/image/a6bbb1e14551ae633cf6465dc83775583c228668",
+      "votes": {}
+    },
+    {
+      "name": "Losing Time",
+      "artist": "Excalion",
+      "album": "Excalion",
+      "image": "https://i.scdn.co/image/bd28f1542a1710838070c95a72f9cd7cff71c2a2",
+      "votes": {}
+    },
+    {
+      "name": "Gimme Gimme Gimme",
+      "artist": "Sinergy",
+      "album": "Sinergy",
+      "image": "https://i.scdn.co/image/60b0a44d886022a469dddb4c736059ae017406d7",
+      "votes": {}
+    },
+    {
+      "name": "Midnight Madness",
+      "artist": "Sinergy",
+      "album": "Sinergy",
+      "image": "https://i.scdn.co/image/c687d724ed78b0748e55e006df31ffc52453f4a9",
+      "votes": {}
+    },
+    {
+      "name": "Unbreakable",
+      "artist": "Stratovarius",
+      "album": "Stratovarius",
+      "image": "https://i.scdn.co/image/24536ba385dd78e27511d97ca54f4be6f54078f1",
+      "votes": {}
+    },
+    {
+      "name": "Until We Touch The Burning Sun",
+      "artist": "Thunderstone",
+      "album": "Thunderstone",
+      "image": "https://i.scdn.co/image/e3b2260934cfa6b39d84494f6ff2e29738c723a9",
+      "votes": {}
+    },
+    {
+      "name": "The Path",
+      "artist": "Thunderstone",
+      "album": "Thunderstone",
+      "image": "https://i.scdn.co/image/40e432fe9f07abbf2154592004f4332ee8ac185e",
+      "votes": {}
+    },
+    {
+      "name": "Kaiverrettu hiekkaan",
+      "artist": "Villieläin",
+      "album": "Villieläin",
+      "image": "https://i.scdn.co/image/e54f7c6221c45d5bdd68245e93fc481abfd61d7a",
+      "votes": {}
+    },
+    {
+      "name": "Aurora Borealis",
+      "artist": "Eternal Tears Of Sorrow",
+      "album": "Eternal Tears Of Sorrow",
+      "image": "https://i.scdn.co/image/51e859dc53d7e7a5403fb6fd9294a613ef6669ff",
+      "votes": {}
+    },
+    {
+      "name": "Heart Of Wilderness",
+      "artist": "Eternal Tears Of Sorrow",
+      "album": "Eternal Tears Of Sorrow",
+      "image": "https://i.scdn.co/image/51e859dc53d7e7a5403fb6fd9294a613ef6669ff",
+      "votes": {}
+    },
+    {
+      "name": "Prophetian",
+      "artist": "Eternal Tears Of Sorrow",
+      "album": "Eternal Tears Of Sorrow",
+      "image": "https://i.scdn.co/image/51e859dc53d7e7a5403fb6fd9294a613ef6669ff",
+      "votes": {}
+    },
+    {
+      "name": "Tears of Autumn Rain",
+      "artist": "Eternal Tears Of Sorrow",
+      "album": "Eternal Tears Of Sorrow",
+      "image": "https://i.scdn.co/image/0bff29ff60101c06931ec0620645ffc4a0c20bae",
+      "votes": {}
+    },
+    {
+      "name": "Training Montage",
+      "artist": "Northern Kings",
+      "album": "Northern Kings",
+      "image": "https://i.scdn.co/image/923ec6ba05d1d87c375ec76578adc458c012e67b",
+      "votes": {}
+    },
+    {
+      "name": "I Have A Right",
+      "artist": "Sonata Arctica",
+      "album": "Sonata Arctica",
+      "image": "https://i.scdn.co/image/657ef1ef571569401704f63dc7f21cff2e3daf2b",
+      "votes": {}
+    },
+    {
+      "name": "Revelation",
+      "artist": "Insomnium",
+      "album": "Insomnium",
+      "image": "https://i.scdn.co/image/37ae5031fe0dceeab351684ee4f6525a28d58168",
+      "votes": {}
+    },
+    {
+      "name": "Flaming Ember",
+      "artist": "Cadacross",
+      "album": "Cadacross",
+      "image": "https://i.scdn.co/image/f59fec37769b0c4efe7fc6b6424a92d24c5ea90e",
+      "votes": {}
+    },
+    {
+      "name": "Morning Star",
+      "artist": "Cadacross",
+      "album": "Cadacross",
+      "image": "https://i.scdn.co/image/f59fec37769b0c4efe7fc6b6424a92d24c5ea90e",
+      "votes": {}
+    },
+    {
+      "name": "Death And The Healing",
+      "artist": "Wintersun",
+      "album": "Wintersun",
+      "image": "https://i.scdn.co/image/a7672005b3dca15c81218b271aebecdc27170216",
+      "votes": {}
+    },
+    {
+      "name": "Juranoid",
+      "artist": "Hevisaurus",
+      "album": "Hevisaurus",
+      "image": "https://i.scdn.co/image/c82fc5fe5906754a67138c6ab4fdd40db6acd68b",
+      "votes": {}
+    },
+    {
+      "name": "Wolf and the Moon",
+      "artist": "Leverage",
+      "album": "Leverage",
+      "image": "https://i.scdn.co/image/1db096f8b095708f4552adfd7ab677e70625613e",
+      "votes": {}
+    },
+    {
+      "name": "Superstition",
+      "artist": "Leverage",
+      "album": "Leverage",
+      "image": "https://i.scdn.co/image/5db7674fb1397eb834f23173bb790cb1414ba16a",
+      "votes": {}
+    },
+    {
+      "name": "Rider of Storm",
+      "artist": "Leverage",
+      "album": "Leverage",
+      "image": "https://i.scdn.co/image/1db096f8b095708f4552adfd7ab677e70625613e",
+      "votes": {}
+    },
+    {
+      "name": "Follow Down That River",
+      "artist": "Leverage",
+      "album": "Leverage",
+      "image": "https://i.scdn.co/image/5db7674fb1397eb834f23173bb790cb1414ba16a",
+      "votes": {}
+    },
+    {
+      "name": "Legions of Invisible",
+      "artist": "Leverage",
+      "album": "Leverage",
+      "image": "https://i.scdn.co/image/1db096f8b095708f4552adfd7ab677e70625613e",
+      "votes": {}
+    },
+    {
+      "name": "One Night In Bangkok (Bonus Track)",
+      "artist": "Frosttide",
+      "album": "Frosttide",
+      "image": "https://i.scdn.co/image/bc178f1922b66fc9fe34310ce8ff67eca5495448",
+      "votes": {}
+    },
+    {
+      "name": "Traitor Within",
+      "artist": "Frosttide",
+      "album": "Frosttide",
+      "image": "https://i.scdn.co/image/bc178f1922b66fc9fe34310ce8ff67eca5495448",
+      "votes": {}
+    },
+    {
+      "name": "No Turning Back",
+      "artist": "Frosttide",
+      "album": "Frosttide",
+      "image": "https://i.scdn.co/image/4383f43315172b511ecc15182507687bc26bc2cd",
+      "votes": {}
+    },
+    {
+      "name": "Valkyries - 2013 Version",
+      "artist": "Amberian Dawn",
+      "album": "Amberian Dawn",
+      "image": "https://i.scdn.co/image/73bfc24b5242ef148499d30ce22cc9eb631e6653",
+      "votes": {}
+    },
+    {
+      "name": "Fear of Domination",
+      "artist": "Fear Of Domination",
+      "album": "Fear Of Domination",
+      "image": "https://i.scdn.co/image/35c59fde654b167006e83cd624bcb59492457452",
+      "votes": {}
+    },
+    {
+      "name": "Aikakirjat",
+      "artist": "Heavy Metal Perse",
+      "album": "Heavy Metal Perse",
+      "image": "https://i.scdn.co/image/0626ae1e8dde106022f285fcf4c9703898e20b96",
+      "votes": {}
+    },
+    {
+      "name": "Heroes To Us",
+      "artist": "Kalmah",
+      "album": "Kalmah",
+      "image": "https://i.scdn.co/image/3cde68c6cab4414b8fe679d693606ff25619f08c",
+      "votes": {}
+    },
+    {
+      "name": "The Ghost",
+      "artist": "Mors Principium Est",
+      "album": "Mors Principium Est",
+      "image": "https://i.scdn.co/image/15a068bc329d2e9553d44fff9ed39077e4842d12",
+      "votes": {}
+    },
+    {
+      "name": "I Did It My Way",
+      "artist": "Revolution Renaissance",
+      "album": "Revolution Renaissance",
+      "image": "https://i.scdn.co/image/6ba86c2161411da758b491f37195453b12d2fa87",
+      "votes": {}
+    },
+    {
+      "name": "We Are Magic",
+      "artist": "Revolution Renaissance",
+      "album": "Revolution Renaissance",
+      "image": "https://i.scdn.co/image/6ba86c2161411da758b491f37195453b12d2fa87",
+      "votes": {}
+    },
+    {
+      "name": "Revolution Renaissance",
+      "artist": "Revolution Renaissance",
+      "album": "Revolution Renaissance",
+      "image": "https://i.scdn.co/image/6ba86c2161411da758b491f37195453b12d2fa87",
+      "votes": {}
+    },
+    {
+      "name": "Deadsong",
+      "artist": "Before The Dawn",
+      "album": "Before The Dawn",
+      "image": "https://i.scdn.co/image/82bcffb34e79e1a4a7fc700f39b1c7966994f9cc",
+      "votes": {}
+    },
+    {
+      "name": "Shadowsouls",
+      "artist": "Imperanon",
+      "album": "Imperanon",
+      "image": "https://i.scdn.co/image/2ccdb40aed6bc88af6c7cb414361d65b0f1b26a9",
+      "votes": {}
+    },
+    {
+      "name": "Frozen Angel",
+      "artist": "Norther",
+      "album": "Norther",
+      "image": "https://i.scdn.co/image/be34ae1c77b7ceb5f2b4518f9653ea27de0f688e",
+      "votes": {}
+    },
+    {
+      "name": "At The Break Of Dawn (feat. Elize Ryd)",
+      "artist": "Arion",
+      "album": "Arion",
+      "image": "https://i.scdn.co/image/aedcbe0be3809529987aebdcafd777bb3bef06cf",
+      "votes": {}
+    },
+    {
+      "name": "Tuonen viemää",
+      "artist": "Ruoska",
+      "album": "Ruoska",
+      "image": "https://i.scdn.co/image/3f6ecf282592346b70b638878b4ffa938db2a586",
+      "votes": {}
+    },
+    {
+      "name": "Chambers Of The Starwatcher",
+      "artist": "Thy Serpent",
+      "album": "Thy Serpent",
+      "image": "https://i.scdn.co/image/1e21cd0c282073e281612f1508c0059181d4ab2d",
+      "votes": {}
+    },
+    {
+      "name": "In The Heat Of The Night",
+      "artist": "To/Die/For",
+      "album": "To/Die/For",
+      "image": "https://i.scdn.co/image/44451289a3e59987f40990f7c43ee9b2dba0ec4f",
+      "votes": {}
+    },
+    {
+      "name": "Misanthropolis",
+      "artist": "Noumena",
+      "album": "Noumena",
+      "image": "https://i.scdn.co/image/b2d70cda6495f421d4fb5017f7d85e8150f9e0b3",
+      "votes": {}
+    }
+  ]
+}
