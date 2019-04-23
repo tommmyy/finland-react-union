@@ -1,5 +1,8 @@
-// import React from 'react';
+import React from 'react';
+import TracksOverview from '../containers/TracksOverview';
 
-const Root = () => 'Rating';
+const Root = () => {
+	return <TracksOverview />;
+};
 
 export default Root;
