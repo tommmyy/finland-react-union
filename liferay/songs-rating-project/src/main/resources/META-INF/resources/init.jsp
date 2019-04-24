@@ -10,3 +10,5 @@ taglib uri="http://liferay.com/tld/ui" prefix="liferay-ui" %>
 <liferay-theme:defineObjects />
 
 <portlet:defineObjects />
+
+<c:set var="ns"><portlet:namespace/></c:set>
