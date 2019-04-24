@@ -1,26 +1,15 @@
 import React, { useMemo } from 'react';
-import { cx, mapIndexed } from 'ramda-extension';
+import { cx } from 'ramda-extension';
+import { map } from 'ramda';
 import { TrackCard, Pagination } from '@finland/ui-components';
 
 import classes from './TracksOverview.css';
 
 const TracksOverview = ({ paginationProps, tracks }) => {
-	const { page, limit } = paginationProps;
-	const offset = (page - 1) * limit;
-
 	const rows = useMemo(
 		() =>
 			tracks &&
-			mapIndexed(
-				(track, i) => (
-					<TrackCard
-						key={track.id}
-						className={classes.row}
-						track={{ ...track, order: offset + i + 1 }}
-					/>
-				),
-				tracks
-			),
+			map(track => <TrackCard key={track.id} className={classes.row} track={track} />, tracks),
 		[tracks]
 	);
 
