@@ -2,7 +2,7 @@ const db = require('./db.json');
 const R = require('ramda');
 const R_ = require('ramda-extension');
 
-const toTrack = R.applySpec({
+const toSong = R.applySpec({
 	id: R.path(['track', 'id']),
 	name: R.path(['track', 'name']),
 	artist: R.path(['track', 'artists', 0, 'name']),
@@ -18,8 +18,8 @@ const addOrderProp = R.o(
 	R.sort(R.descend(R.prop('votes')))
 );
 
-const tracks = R.o(addOrderProp, R.map(toTrack))(db);
+const songs = R.o(addOrderProp, R.map(toSong))(db);
 
 module.exports = () => {
-	return { tracks };
+	return { songs };
 };

@@ -1,11 +1,11 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import fetch from 'isomorphic-fetch';
-import TracksOverviewUI from '../components/TracksOverview';
+import SongsOverviewUI from '../components/SongsOverview';
 
 const fetchPage = ({ page, limit }) =>
 	fetch(
-		`http://localhost:3004/api/tracks?_sort=votes&_order=desc&_page=${page}&_limit=${limit}`
+		`http://localhost:3004/api/songs?_sort=votes&_order=desc&_page=${page}&_limit=${limit}`
 	).then(response =>
 		response.json().then(items => ({
 			items,
@@ -13,15 +13,15 @@ const fetchPage = ({ page, limit }) =>
 		}))
 	);
 
-const TracksOverview = ({ limit, initialPage }) => {
-	const [tracks, setTracks] = useState();
+const SongsOverview = ({ limit, initialPage }) => {
+	const [songs, setSongs] = useState();
 	const [total, setTotal] = useState();
 	const [page, setPage] = useState(initialPage);
 
 	useEffect(() => {
 		fetchPage({ page, limit }).then(({ items, total }) => {
 			setTotal(total);
-			setTracks(items);
+			setSongs(items);
 		});
 	}, []);
 
@@ -30,14 +30,14 @@ const TracksOverview = ({ limit, initialPage }) => {
 			fetchPage({ page, limit }).then(({ items, total }) => {
 				setPage(page);
 				setTotal(total);
-				setTracks(items);
+				setSongs(items);
 			});
 		},
 		[limit]
 	);
 
 	return (
-		<TracksOverviewUI
+		<SongsOverviewUI
 			page={page}
 			paginationProps={{
 				total,
@@ -45,12 +45,12 @@ const TracksOverview = ({ limit, initialPage }) => {
 				page,
 				onChangePage,
 			}}
-			tracks={tracks}
+			songs={songs}
 		/>
 	);
 };
 
-TracksOverview.propTypes = { initialPage: PropTypes.number, limit: PropTypes.number };
-TracksOverview.defaultProps = { initialPage: 1, limit: 20 };
+SongsOverview.propTypes = { initialPage: PropTypes.number, limit: PropTypes.number };
+SongsOverview.defaultProps = { initialPage: 1, limit: 20 };
 
-export default TracksOverview;
+export default SongsOverview;

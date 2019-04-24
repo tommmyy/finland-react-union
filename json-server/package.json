@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "import-tracks": "node scripts/importTracks.js",
+    "import-songs": "node scripts/importSongs.js",
     "start": "json-server index.js --routes routes.json --port 3004 --watch"
   },
   "devDependencies": {

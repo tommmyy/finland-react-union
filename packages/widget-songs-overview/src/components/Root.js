@@ -1,8 +1,8 @@
 import React from 'react';
-import TracksOverview from '../containers/TracksOverview';
+import SongsOverview from '../containers/SongsOverview';
 
 const Root = () => {
-	return <TracksOverview />;
+	return <SongsOverview />;
 };
 
 export default Root;

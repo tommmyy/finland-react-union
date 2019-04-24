@@ -1,8 +1,8 @@
 import React from 'react';
-import TracksRating from '../containers/TracksRating';
+import SongsRating from '../containers/SongsRating';
 
 const Root = () => {
-	return <TracksRating />;
+	return <SongsRating />;
 };
 
 export default Root;

@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import { head, o } from 'ramda';
 import { defaultToEmptyArray } from 'ramda-extension';
 import fetch from 'isomorphic-fetch';
-import TracksRatingUI from '../components/TracksRating';
+import SongsRatingUI from '../components/SongsRating';
 
 const safeHead = o(head, defaultToEmptyArray);
 
 const fetchPage = ({ page, limit }) =>
 	fetch(
-		`http://localhost:3004/api/tracks?_sort=votes&_order=desc&_page=${page}&_limit=${limit}`
+		`http://localhost:3004/api/songs?_sort=votes&_order=desc&_page=${page}&_limit=${limit}`
 	).then(response =>
 		response.json().then(items => ({
 			items,
@@ -17,15 +17,15 @@ const fetchPage = ({ page, limit }) =>
 		}))
 	);
 
-const TracksRating = ({ limit, initialPage }) => {
-	const [tracks, setTracks] = useState();
+const SongsRating = ({ limit, initialPage }) => {
+	const [songs, setSongs] = useState();
 	const [total, setTotal] = useState();
 	const [page, setPage] = useState(initialPage);
 
 	useEffect(() => {
 		fetchPage({ page, limit }).then(({ items, total }) => {
 			setTotal(total);
-			setTracks(items);
+			setSongs(items);
 		});
 	}, []);
 
@@ -34,26 +34,26 @@ const TracksRating = ({ limit, initialPage }) => {
 			fetchPage({ page, limit }).then(({ items, total }) => {
 				setPage(page);
 				setTotal(total);
-				setTracks(items);
+				setSongs(items);
 			});
 		},
 		[limit]
 	);
 
-	return tracks ? (
-		<TracksRatingUI
+	return songs ? (
+		<SongsRatingUI
 			paginationProps={{
 				total,
 				limit,
 				page,
 				onChangePage,
 			}}
-			track={safeHead(tracks)}
+			song={safeHead(songs)}
 		/>
 	) : null;
 };
 
-TracksRating.propTypes = { initialPage: PropTypes.number, limit: PropTypes.number };
-TracksRating.defaultProps = { initialPage: 1, limit: 1 };
+SongsRating.propTypes = { initialPage: PropTypes.number, limit: PropTypes.number };
+SongsRating.defaultProps = { initialPage: 1, limit: 1 };
 
-export default TracksRating;
+export default SongsRating;

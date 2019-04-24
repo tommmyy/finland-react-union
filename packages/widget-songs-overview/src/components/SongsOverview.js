@@ -1,21 +1,29 @@
 import React, { useMemo } from 'react';
 import { cx } from 'ramda-extension';
 import { map } from 'ramda';
-import { TrackCard, Pagination } from '@finland/ui-components';
+import { SongCard, Pagination } from '@finland/ui-components';
 
-import classes from './TracksOverview.css';
+import classes from './SongsOverview.css';
 
-const TracksOverview = ({ paginationProps, tracks }) => {
+const SongsOverview = ({ paginationProps, songs, onClickLike }) => {
 	const rows = useMemo(
 		() =>
-			tracks &&
-			map(track => <TrackCard key={track.id} className={classes.row} track={track} />, tracks),
-		[tracks]
+			songs &&
+			map(
+				song => (
+					<SongCard
+						key={song.id} className={classes.row} onClickLike={onClickLike}
+						song={song}
+					/>
+				),
+				songs
+			),
+		[songs]
 	);
 
 	const pagination = useMemo(() => <Pagination {...paginationProps} />, [...paginationProps]);
 
-	return tracks ? (
+	return songs ? (
 		<div className={cx(classes.root)}>
 			<div className={cx(classes.list)}>{rows}</div>
 			<div className={cx(classes.pagination)}>{pagination}</div>
@@ -23,4 +31,4 @@ const TracksOverview = ({ paginationProps, tracks }) => {
 	) : null;
 };
 
-export default TracksOverview;
+export default SongsOverview;

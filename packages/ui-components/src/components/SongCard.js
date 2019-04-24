@@ -1,9 +1,9 @@
 import React from 'react';
 import { cx, noop } from 'ramda-extension';
-import classes from './TrackCard.css';
+import classes from './SongCard.css';
 
-const TrackCard = ({ className, children, onClickLike, track }) => {
-	const { id, name, artist, image, votes, order, spotifyHref } = track;
+const SongCard = ({ className, children, onClickLike, song }) => {
+	const { id, name, artist, image, votes, order, spotifyHref } = song;
 	return (
 		<div className={cx(classes.card, className)} key={id}>
 			<div className={cx(classes.item, classes.order)}>{order}</div>
@@ -15,7 +15,7 @@ const TrackCard = ({ className, children, onClickLike, track }) => {
 			</div>
 			<div className={cx(classes.item, classes.votes)}>{votes}x</div>
 			<div className={cx(classes.item, classes['text-wrapper'])}>
-				<div className={cx(classes['track-name'])}>{name}</div>
+				<div className={cx(classes['song-name'])}>{name}</div>
 				<div className={cx(classes.artist)}>{artist}</div>
 			</div>
 			<div className={cx(classes.item, classes['actions-wrapper'])}>
@@ -25,7 +25,7 @@ const TrackCard = ({ className, children, onClickLike, track }) => {
 				<span
 					className={cx(classes.action, classes['action-like'])}
 					onClick={event => {
-						onClickLike(event, track);
+						onClickLike(event, song);
 					}}
 				>
 					like
@@ -36,8 +36,8 @@ const TrackCard = ({ className, children, onClickLike, track }) => {
 	);
 };
 
-TrackCard.defaultProps = {
+SongCard.defaultProps = {
 	onClickLike: noop,
 };
 
-export default TrackCard;
+export default SongCard;
