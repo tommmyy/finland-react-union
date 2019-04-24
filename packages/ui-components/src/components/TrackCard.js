@@ -2,7 +2,11 @@ import React from 'react';
 import { cx } from 'ramda-extension';
 import classes from './TrackCard.css';
 
-const TrackCard = ({ className, id, name, artist, image, votes, order, spotifyHref }) => (
+const TrackCard = ({
+	className,
+	children,
+	track: { id, name, artist, image, votes, order, spotifyHref },
+}) => (
 	<div className={cx(classes.card, className)} key={id}>
 		<div className={cx(classes.item, classes.order)}>{order}</div>
 		<div className={cx(classes.item, classes['image-wrapper'])}>
@@ -24,6 +28,7 @@ const TrackCard = ({ className, id, name, artist, image, votes, order, spotifyHr
 				like
 			</a>
 		</div>
+		{children}
 	</div>
 );
 

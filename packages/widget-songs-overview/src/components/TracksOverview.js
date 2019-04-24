@@ -14,8 +14,9 @@ const TracksOverview = ({ paginationProps, tracks }) => {
 			mapIndexed(
 				(track, i) => (
 					<TrackCard
-						key={track.id} className={classes.row} {...track}
-						order={offset + i + 1}
+						key={track.id}
+						className={classes.row}
+						track={{ ...track, order: offset + i + 1 }}
 					/>
 				),
 				tracks
@@ -31,10 +32,6 @@ const TracksOverview = ({ paginationProps, tracks }) => {
 			<div className={cx(classes.pagination)}>{pagination}</div>
 		</div>
 	) : null;
-};
-
-TracksOverview.defaultProps = {
-	offset: 0,
 };
 
 export default TracksOverview;

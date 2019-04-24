@@ -1,6 +1,10 @@
+.root {
+	padding: 1rem;
+}
+
+
 .list {
 	list-style: none;
-	padding: 1rem;
 	margin: 0;
 }
 .item {
@@ -12,3 +16,49 @@
 	color: #f00;
 }
 
+.root--local {
+	width: 100%;
+	padding: 0;
+}
+	.root--local .list {
+		display: flex;
+		justify-content: space-evenly;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	.root--local .item {
+		margin: 0;
+	}
+	.root--local .prev {
+		flex-grow: 1;
+		text-align: left;
+	}
+	.root--local .next {
+		flex-grow: 1;
+		text-align: right;
+	}
+
+	.root--local .text-prev, .root--local .text-next {
+		visibility: hidden;
+	}
+
+	.root--local .arrow-next:after { 
+		 content: '\25B6';
+	}
+	.root--local .arrow-prev:after {
+		 content: '\25C0';
+	}
+
+	.root--local .link {
+		display: block;
+		width: 100%;
+		color: #000;
+		text-align: center;
+		background: #e9e9e9;
+		text-decoration:none;
+	}
+	.root--local .link:hover {
+		background-color: #000;
+		color: #fff;
+	}

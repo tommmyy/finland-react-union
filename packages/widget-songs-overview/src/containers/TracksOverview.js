@@ -51,6 +51,6 @@ const TracksOverview = ({ limit, initialPage }) => {
 };
 
 TracksOverview.propTypes = { initialPage: PropTypes.number, limit: PropTypes.number };
-TracksOverview.defaultProps = { initialPage: 1, limit: 100 };
+TracksOverview.defaultProps = { initialPage: 1, limit: 20 };
 
 export default TracksOverview;

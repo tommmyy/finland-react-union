@@ -1,6 +1,7 @@
 .card {
 	padding: 8px 0;
 	border: 1px solid #e9e9e9;
+	position: relative;
 }
 
 .item {
@@ -21,7 +22,6 @@
 }
 
 .text-wrapper {
-	width: 50%;
 }
 
 .track-name{
@@ -38,6 +38,10 @@
 .actions-wrapper {
 	text-align: right;
 	width: 96px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
 }
 
 .action {

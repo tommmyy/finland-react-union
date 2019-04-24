@@ -6,8 +6,8 @@ import classes from './TracksRating.css';
 const TracksRating = ({ paginationProps, track }) => {
 	return track ? (
 		<div className={cx(classes.root)}>
-			<TrackCard {...track} order={1}>
-				<Pagination {...paginationProps} />
+			<TrackCard track={{ ...track, order: 1 }}>
+				<Pagination kind="local" className={classes.pagination} {...paginationProps} />
 			</TrackCard>
 		</div>
 	) : null;
