@@ -1,5 +1,5 @@
 {
-	"name": "@finland/widget-songs-rating",
+	"name": "@finland/ui-components",
 	"version": "0.12.1",
 	"private": true,
 	"license": "UNLICENSED",
@@ -8,7 +8,6 @@
 	},
 	"main": "src/index.js",
 	"dependencies": {
-		"@finland/ui-components": "^0.12.1",
 		"isomorphic-fetch": "^2.2.1",
 		"prop-types": "^15.7.2",
 		"ramda": "^0.26.1",

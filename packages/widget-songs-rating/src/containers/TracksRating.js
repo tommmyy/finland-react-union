@@ -1,7 +1,11 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import { head, o } from 'ramda';
+import { defaultToEmptyArray } from 'ramda-extension';
 import fetch from 'isomorphic-fetch';
-import TracksOverviewUI from '../components/TracksOverview';
+import TracksRatingUI from '../components/TracksRating';
+
+const safeHead = o(head, defaultToEmptyArray);
 
 const fetchPage = ({ page, limit }) =>
 	fetch(
@@ -13,7 +17,7 @@ const fetchPage = ({ page, limit }) =>
 		}))
 	);
 
-const TracksOverview = ({ limit, initialPage }) => {
+const TracksRating = ({ limit, initialPage }) => {
 	const [tracks, setTracks] = useState();
 	const [total, setTotal] = useState();
 	const [page, setPage] = useState(initialPage);
@@ -36,21 +40,20 @@ const TracksOverview = ({ limit, initialPage }) => {
 		[limit]
 	);
 
-	return (
-		<TracksOverviewUI
-			page={page}
+	return tracks ? (
+		<TracksRatingUI
 			paginationProps={{
 				total,
 				limit,
 				page,
 				onChangePage,
 			}}
-			tracks={tracks}
+			track={safeHead(tracks)}
 		/>
-	);
+	) : null;
 };
 
-TracksOverview.propTypes = { initialPage: PropTypes.number, limit: PropTypes.number };
-TracksOverview.defaultProps = { initialPage: 1, limit: 100 };
+TracksRating.propTypes = { initialPage: PropTypes.number, limit: PropTypes.number };
+TracksRating.defaultProps = { initialPage: 1, limit: 1 };
 
-export default TracksOverview;
+export default TracksRating;

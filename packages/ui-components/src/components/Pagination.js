@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { range, map } from 'ramda';
 import { cx } from 'ramda-extension';
 import classes from './Pagination.css';
@@ -29,7 +28,7 @@ const Pagination = ({ total, limit, page: currentPage, onChangePage }) => {
 					</li>
 				)}
 				{map(page => (
-					<li className={classes.item}>
+					<li key={page} className={classes.item}>
 						<a
 							className={cx(classes.link, { [classes['link--active']]: page === currentPage })}
 							href="#"

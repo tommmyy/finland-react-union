@@ -1,67 +1,16 @@
-import React, { useMemo } from 'react';
-import PropTypes from 'prop-types';
-import { cx, mapIndexed } from 'ramda-extension';
-import classes from './TracksOverview.css';
-import Pagination from './Pagination';
+import React from 'react';
+import { cx } from 'ramda-extension';
+import { TrackCard, Pagination } from '@finland/ui-components';
+import classes from './TracksRating.css';
 
-const TracksOverview = ({ paginationProps, tracks }) => {
-	const { page, limit } = paginationProps;
-	const offset = (page - 1) * limit;
-
-	const rows = useMemo(
-		() =>
-			tracks &&
-			mapIndexed(
-				({ id, name, artist, image, votes, spotifyHref }, i) => (
-					<div className={classes.row} key={id}>
-						<div className={cx(classes.item, classes.order)}>{offset + i + 1}</div>
-						<div className={cx(classes.item, classes['image-wrapper'])}>
-							<img
-								className={classes.image} src={image} width="64"
-								height="64"
-							/>
-						</div>
-						<div className={cx(classes.item, classes.votes)}>{votes}x</div>
-						<div className={cx(classes.item, classes['text-wrapper'])}>
-							<div className={cx(classes['track-name'])}>{name}</div>
-							<div className={cx(classes.artist)}>{artist}</div>
-						</div>
-						<div className={cx(classes.item, classes['actions-wrapper'])}>
-							<a className={cx(classes.action)} href={spotifyHref} target="_blank">
-								play
-							</a>
-							<a
-								className={cx(classes.action, classes['action-like'])}
-								href={spotifyHref}
-								target="_blank"
-							>
-								like
-							</a>
-						</div>
-					</div>
-				),
-				tracks
-			),
-		[tracks]
-	);
-
-	const pagination = useMemo(() => <Pagination {...paginationProps} />, [...paginationProps]);
-
-	return tracks ? (
+const TracksRating = ({ paginationProps, track }) => {
+	return track ? (
 		<div className={cx(classes.root)}>
-			<div className={cx(classes.list)}>{rows}</div>
-			<div className={cx(classes.pagination)}>{pagination}</div>
+			<TrackCard {...track} order={1}>
+				<Pagination {...paginationProps} />
+			</TrackCard>
 		</div>
 	) : null;
 };
 
-TracksOverview.propTypes = {
-	offset: PropTypes.number,
-	tracks: PropTypes.array,
-};
-
-TracksOverview.defaultProps = {
-	offset: 0,
-};
-
-export default TracksOverview;
+export default TracksRating;
