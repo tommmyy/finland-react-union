@@ -1,21 +1,11 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { head, o } from 'ramda';
+import { head, o, map } from 'ramda';
 import { defaultToEmptyArray } from 'ramda-extension';
-import fetch from 'isomorphic-fetch';
+import { fetchPage, like } from '@finland/songs-common';
 import SongsRatingUI from '../components/SongsRating';
 
 const safeHead = o(head, defaultToEmptyArray);
-
-const fetchPage = ({ page, limit }) =>
-	fetch(
-		`http://localhost:3004/api/songs?_sort=votes&_order=desc&_page=${page}&_limit=${limit}`
-	).then(response =>
-		response.json().then(items => ({
-			items,
-			total: Number(response.headers.get('X-Total-Count')),
-		}))
-	);
 
 const SongsRating = ({ limit, initialPage }) => {
 	const [songs, setSongs] = useState();
@@ -29,7 +19,7 @@ const SongsRating = ({ limit, initialPage }) => {
 		});
 	}, []);
 
-	const onChangePage = useCallback(
+	const handleOnChangePage = useCallback(
 		page => {
 			fetchPage({ page, limit }).then(({ items, total }) => {
 				setPage(page);
@@ -37,7 +27,16 @@ const SongsRating = ({ limit, initialPage }) => {
 				setSongs(items);
 			});
 		},
-		[limit]
+		[songs]
+	);
+
+	const handleOnClickLike = useCallback(
+		(_, song) => {
+			like(song).then(updated => {
+				setSongs(map(x => (x.id === updated.id ? updated : x), songs));
+			});
+		},
+		[songs]
 	);
 
 	return songs ? (
@@ -46,8 +45,9 @@ const SongsRating = ({ limit, initialPage }) => {
 				total,
 				limit,
 				page,
-				onChangePage,
+				onChangePage: handleOnChangePage,
 			}}
+			onClickLike={handleOnClickLike}
 			song={safeHead(songs)}
 		/>
 	) : null;

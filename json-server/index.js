@@ -1,4 +1,4 @@
-const db = require('./db.json');
+const db = require('./dbPlaylist.json');
 const R = require('ramda');
 const R_ = require('ramda-extension');
 
@@ -18,8 +18,7 @@ const addOrderProp = R.o(
 	R.sort(R.descend(R.prop('votes')))
 );
 
-const songs = R.o(addOrderProp, R.map(toSong))(db);
-
 module.exports = () => {
+	const songs = R.o(addOrderProp, R.map(toSong))(db);
 	return { songs };
 };

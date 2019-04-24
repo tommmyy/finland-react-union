@@ -9,17 +9,16 @@ const Kinds = { LOCAL: 'local' };
 
 const getPages = ({ currentPage, totalPages, shownPagesCount }) => {
 	const sanitize = clamp(1, totalPages);
+	const left = Math.floor(shownPagesCount / 2);
+	const right = shownPagesCount - left;
 
 	if (shownPagesCount <= 1) {
 		return [currentPage];
-	} else if (currentPage <= shownPagesCount) {
+	} else if (currentPage <= right) {
 		return range(1, sanitize(shownPagesCount + 1));
-	} else if (currentPage >= totalPages - shownPagesCount) {
+	} else if (currentPage >= totalPages - left) {
 		return range(sanitize(totalPages - shownPagesCount + 1), totalPages + 1);
 	} else {
-		const left = Math.floor(shownPagesCount / 2);
-		const right = shownPagesCount - left;
-
 		return range(sanitize(currentPage - left), sanitize(currentPage + right));
 	}
 };
