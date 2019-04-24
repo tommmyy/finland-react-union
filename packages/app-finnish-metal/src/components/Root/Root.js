@@ -1,11 +1,10 @@
 import React from 'react';
-import { Union } from 'react-union';
 import { hot } from 'react-hot-loader';
 
-import routes from '../../routes';
+import SongsOverview from '@finland/widget-songs-overview';
 
 import './Root.css';
 
-const Root = () => <Union routes={routes} />;
+const Root = () => <SongsOverview />;
 
 export default hot(module)(Root);
