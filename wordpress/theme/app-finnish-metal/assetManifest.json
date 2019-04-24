@@ -1,4 +1,8 @@
 {
+  "@finland/widget-songs-overview.css": "/wp-content/themes/my-theme/app-finnish-metal/static/css/@finland/widget-songs-overview.chunk.css",
+  "@finland/widget-songs-overview.js": "/wp-content/themes/my-theme/app-finnish-metal/static/js/@finland/widget-songs-overview.chunk.js",
+  "@finland/widget-songs-rating.css": "/wp-content/themes/my-theme/app-finnish-metal/static/css/@finland/widget-songs-rating.chunk.css",
+  "@finland/widget-songs-rating.js": "/wp-content/themes/my-theme/app-finnish-metal/static/js/@finland/widget-songs-rating.chunk.js",
   "main.css": "/wp-content/themes/my-theme/app-finnish-metal/static/css/main.chunk.css",
   "main.js": "/wp-content/themes/my-theme/app-finnish-metal/static/js/main.chunk.js",
   "runtime.js": "/wp-content/themes/my-theme/app-finnish-metal/static/js/runtime.bundle.js",

@@ -1,7 +1,14 @@
 import '@babel/polyfill';
 import React from 'react';
-import { render } from 'react-dom';
+import { justRender, justUnmountComponentAtNode } from 'react-union';
+import ready from 'document-ready';
 
 import Root from './components/Root';
 
-render(<Root />, document.getElementById('root'));
+ready(() => {
+	justRender(<Root />);
+	if (window.Liferay) {
+		window.Liferay.on('startNavigate', () => justUnmountComponentAtNode());
+		window.Liferay.on('endNavigate', () => justRender(<Root />));
+	}
+});

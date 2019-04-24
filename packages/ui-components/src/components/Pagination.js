@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { values, range, map, clamp } from 'ramda';
 import { cx } from 'ramda-extension';
+import Link from './Link';
 
 import classes from './Pagination.css';
 
@@ -43,7 +44,7 @@ const Pagination = ({
 			<ul className={classes.list}>
 				{hasPrev && (
 					<li className={cx(classes.item, classes.prev)}>
-						<a
+						<Link
 							className={classes.link}
 							href="#"
 							onClick={event => {
@@ -53,13 +54,13 @@ const Pagination = ({
 						>
 							<span className={classes['arrow-prev']} />
 							<span className={classes['text-prev']}>Previous</span>
-						</a>
+						</Link>
 					</li>
 				)}
 				{kind !== Kinds.LOCAL &&
 					map(page => (
 						<li key={page} className={classes.item}>
-							<a
+							<Link
 								className={cx(classes.link, { [classes['link--active']]: page === currentPage })}
 								href="#"
 								onClick={event => {
@@ -68,12 +69,12 @@ const Pagination = ({
 								}}
 							>
 								{page}
-							</a>
+							</Link>
 						</li>
 					))(pages)}
 				{hasNext && (
 					<li className={cx(classes.item, classes.next)}>
-						<a
+						<Link
 							className={classes.link}
 							href="#"
 							onClick={event => {
@@ -83,7 +84,7 @@ const Pagination = ({
 						>
 							<span className={classes['arrow-next']} />
 							<span className={classes['text-next']}>Next</span>
-						</a>
+						</Link>
 					</li>
 				)}
 			</ul>

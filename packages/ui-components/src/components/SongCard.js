@@ -1,6 +1,7 @@
 import React from 'react';
 import { cx, noop } from 'ramda-extension';
 import classes from './SongCard.css';
+import Link from './Link';
 
 const SongCard = ({ className, children, onClickLike, song }) => {
 	const { id, name, artist, image, votes, order, spotifyHref } = song;
@@ -19,9 +20,9 @@ const SongCard = ({ className, children, onClickLike, song }) => {
 				<div className={cx(classes.artist)}>{artist}</div>
 			</div>
 			<div className={cx(classes.item, classes['actions-wrapper'])}>
-				<a className={cx(classes.action)} href={spotifyHref} target="_blank">
+				<Link className={cx(classes.action)} href={spotifyHref} target="_blank">
 					play
-				</a>
+				</Link>
 				<span
 					className={cx(classes.action, classes['action-like'])}
 					onClick={event => {
