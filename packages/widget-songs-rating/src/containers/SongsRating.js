@@ -1,9 +1,19 @@
 import React, { useCallback, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { head, o } from 'ramda';
+import { head, o, compose } from 'ramda';
 import { defaultToEmptyArray } from 'ramda-extension';
-import { fetchSongs, likeSong, getVisibleSongs, getPagination } from '@finland/songs-common';
+import { withMiddleware } from '@redux-tools/middleware-react';
+import { withReducers, namespacedConnect } from '@redux-tools/reducers-react';
+import songs, {
+	middleware as songsMiddleware,
+	fetchSongs,
+	likeSong,
+	getVisibleSongs,
+	getPagination,
+} from '@finland/songs-common';
+import { getEntity } from '@finland/entities';
+
 import SongsRatingUI from '../components/SongsRating';
 
 const safeHead = o(head, defaultToEmptyArray);
@@ -43,10 +53,18 @@ const SongsRating = ({ songs, fetchSongs, likeSong, pagination, initialPage, lim
 SongsRating.propTypes = { initialPage: PropTypes.number, limit: PropTypes.number };
 SongsRating.defaultProps = { initialPage: 1, limit: 1 };
 
-export default connect(
-	state => ({
-		songs: getVisibleSongs(state),
-		pagination: getPagination(state),
-	}),
-	{ fetchSongs, likeSong }
+export default compose(
+	withReducers({ songs }),
+	withMiddleware({ songsRating: songsMiddleware() }),
+	connect(state => ({ songsEntities: getEntity('songs')(state) })),
+	namespacedConnect(
+		(state, { songsEntities }) => ({
+			songs: getVisibleSongs(songsEntities)(state),
+			pagination: getPagination(state),
+		}),
+		{
+			fetchSongs,
+			likeSong,
+		}
+	)
 )(SongsRating);

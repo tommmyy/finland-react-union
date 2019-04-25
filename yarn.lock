@@ -901,7 +901,7 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
-"@babel/runtime@^7.3.1", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.3":
+"@babel/runtime@^7.3.1", "@babel/runtime@^7.3.4":
   version "7.4.3"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.4.3.tgz#79888e452034223ad9609187a0ad1fe0d2ad4bdc"
   integrity sha512-9lsJwJLxDh/T3Q3SZszfWOTkk3pHbkmH+3KY+zwIDmsNlxsumuhS2TH3NIpktU4kNvfzy+k3eLT7aTJSPTo0OA==
@@ -1100,6 +1100,73 @@
   dependencies:
     "@redux-tools/utils" "^0.4.0"
     invariant "^2.2.4"
+    ramda "^0.26.1"
+    ramda-extension "^0.7.1"
+
+"@redux-tools/injectors-react@^0.5.0-alpha.4":
+  version "0.5.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@redux-tools/injectors-react/-/injectors-react-0.5.0-alpha.4.tgz#76d10de5a7feab9ac237f33a26e5a1f137397a54"
+  integrity sha512-j4FIjjHh3BFGZgLEryw5XeJmJ9s0bDcYNtf7T0PPhixdytWGH7Y/ntTBz7nuWtZ57KFagBKssLU7ItN/EIY+lQ==
+  dependencies:
+    "@redux-tools/utils" "^0.4.0"
+    prop-types "^15.6.2"
+    ramda "^0.26.1"
+    ramda-extension "^0.7.1"
+
+"@redux-tools/injectors@^0.5.0-alpha.4":
+  version "0.5.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@redux-tools/injectors/-/injectors-0.5.0-alpha.4.tgz#cb65ce236e65286c40a03e49293b7e4d71e84a97"
+  integrity sha512-p7SoQDIVBWRDX0CGGrteoFPaaQnSHqUdCvBxkGJtu7bsFIRuwn9QwdvlzrGHGJgsH8QyUlVycwzY8C71W/7a1Q==
+  dependencies:
+    ramda "^0.26.1"
+    ramda-extension "^0.7.1"
+
+"@redux-tools/middleware-react@^0.5.0-alpha.4":
+  version "0.5.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@redux-tools/middleware-react/-/middleware-react-0.5.0-alpha.4.tgz#da387d588118c912f4c487a0d5b2ea128cd05a36"
+  integrity sha512-xMe23k9xWGGobgOEUL5nyPgfmI+97j/tv39Nrdz0DMldLPHeS90mWOfu7uKqoPe4018kUd0wE99U3fAWyuQdCA==
+  dependencies:
+    "@redux-tools/injectors-react" "^0.5.0-alpha.4"
+    "@redux-tools/namespaces" "^0.5.0-alpha.4"
+    ramda "^0.26.1"
+    ramda-extension "^0.7.1"
+
+"@redux-tools/middleware@^0.5.0-alpha.4":
+  version "0.5.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@redux-tools/middleware/-/middleware-0.5.0-alpha.4.tgz#5c6f419f2b6498937d1a71b6d0d67168a7c1c56f"
+  integrity sha512-0UHXf3vmyBmfF/RN77/2kQiepSup60vXKyfS1LV7mBhr5K9E/seAoJkxWVvQbRB853KbMZkXy+Qiurqlrw9NgA==
+  dependencies:
+    "@redux-tools/actions" "^0.5.0-alpha.4"
+    "@redux-tools/injectors" "^0.5.0-alpha.4"
+    "@redux-tools/namespaces" "^0.5.0-alpha.4"
+    ramda "^0.26.1"
+    ramda-extension "^0.7.1"
+
+"@redux-tools/namespaces@^0.5.0-alpha.4":
+  version "0.5.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@redux-tools/namespaces/-/namespaces-0.5.0-alpha.4.tgz#8c18079f9ecd1511d8af0f09121ff64d74c17efd"
+  integrity sha512-XftdZ8piZPqNRt6piGTf1b5QhnB2nQ5ME7DB9BYbAg8HRPwaB1q/jctB4DVF/YnImK/BhmF0FmUkTddE+yTjQg==
+  dependencies:
+    ramda "^0.26.1"
+
+"@redux-tools/reducers-react@^0.5.0-alpha.4":
+  version "0.5.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@redux-tools/reducers-react/-/reducers-react-0.5.0-alpha.4.tgz#1ce149b47c48e9d42e815a187f09fd4b804129b8"
+  integrity sha512-WNfMcdz8qxZ911Mghkffm70CBuU7i+6LR635Ypqvj8RxZW2EU+B0DxdgatnG4KqExm0B7bJ7VoucvnmIFQqnQw==
+  dependencies:
+    "@redux-tools/injectors-react" "^0.5.0-alpha.4"
+    "@redux-tools/namespaces" "^0.5.0-alpha.4"
+    ramda "^0.26.1"
+    ramda-extension "^0.7.1"
+
+"@redux-tools/reducers@^0.5.0-alpha.4":
+  version "0.5.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@redux-tools/reducers/-/reducers-0.5.0-alpha.4.tgz#15730d5c2f4033401893ab342a89a27aa544084c"
+  integrity sha512-Xm3FK5DNdODWfHNZeCoOX9TrbiClX5mNLpZUvZS668MW7LJOKCFDWPHj/DslF0IM2m1qd203Di71IrJ0I0h1YA==
+  dependencies:
+    "@redux-tools/actions" "^0.5.0-alpha.4"
+    "@redux-tools/injectors" "^0.5.0-alpha.4"
+    "@redux-tools/namespaces" "^0.5.0-alpha.4"
     ramda "^0.26.1"
     ramda-extension "^0.7.1"
 
@@ -7316,7 +7383,7 @@ react-hot-loader@^4.3.6, react-hot-loader@^4.6.5:
     shallowequal "^1.0.2"
     source-map "^0.7.3"
 
-react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.8.6:
+react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.2, react-is@^16.8.4, react-is@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
   integrity sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
@@ -7326,17 +7393,17 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-redux@^7.0.2:
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-7.0.2.tgz#34b280a3482aaf60e7d4a504b1295165cbe6b86a"
-  integrity sha512-uKRuMgQt8dWbcz0U75oFK5tDo3boyAKrqvf/j94vpqRFFZfyDDy4kofUgloFIGyuKTq2Zz51zgK9RzOTFXk5ew==
+react-redux@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-6.0.1.tgz#0d423e2c1cb10ada87293d47e7de7c329623ba4d"
+  integrity sha512-T52I52Kxhbqy/6TEfBv85rQSDz6+Y28V/pf52vDWs1YRXG19mcFOGfHnY2HsNFHyhP+ST34Aih98fvt6tqwVcQ==
   dependencies:
-    "@babel/runtime" "^7.4.3"
+    "@babel/runtime" "^7.3.1"
     hoist-non-react-statics "^3.3.0"
     invariant "^2.2.4"
     loose-envify "^1.4.0"
     prop-types "^15.7.2"
-    react-is "^16.8.6"
+    react-is "^16.8.2"
 
 react-test-renderer@^16.0.0-0:
   version "16.8.6"

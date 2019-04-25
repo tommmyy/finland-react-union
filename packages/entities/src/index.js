@@ -8,6 +8,8 @@ export const ActionTypes = makeActionTypes(SCOPE, ['MERGE_ENTITIES', 'SET_ENTITI
 export const setEntities = makeSimpleActionCreator(ActionTypes.SET_ENTITIES);
 export const mergeEntities = makeSimpleActionCreator(ActionTypes.MERGE_ENTITIES);
 
+export const getEntity = entity => path(['entities', entity]);
+
 export const initialState = {};
 
 export default makeReducer(

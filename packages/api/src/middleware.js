@@ -30,6 +30,7 @@ export const middleware = () => ({ dispatch }) => next => action => {
 
 	if (action.type === ActionTypes.API_FETCH) {
 		const { pagination, queryParams = {}, endpoint, method = 'GET', body } = action.payload;
+		console.log(action.meta)
 
 		const queryString = serializeQueryParams(
 			pagination ? { ...queryParams, ...getPaginationQuery(pagination) } : queryParams

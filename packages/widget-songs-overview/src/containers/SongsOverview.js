@@ -1,7 +1,18 @@
 import React, { useCallback, useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { fetchSongs, likeSong, getVisibleSongs, getPagination } from '@finland/songs-common';
+import { compose } from 'ramda';
+import { withMiddleware } from '@redux-tools/middleware-react';
+import { withReducers, namespacedConnect } from '@redux-tools/reducers-react';
+import songs, {
+	middleware as songsMiddleware,
+	fetchSongs,
+	likeSong,
+	getVisibleSongs,
+	getPagination,
+} from '@finland/songs-common';
+import { getEntity } from '@finland/entities';
+
 import SongsOverviewUI from '../components/SongsOverview';
 
 const SongsOverview = ({ songs, fetchSongs, likeSong, pagination, initialPage, limit }) => {
@@ -38,10 +49,18 @@ const SongsOverview = ({ songs, fetchSongs, likeSong, pagination, initialPage, l
 SongsOverview.propTypes = { initialPage: PropTypes.number, limit: PropTypes.number };
 SongsOverview.defaultProps = { initialPage: 1, limit: 20 };
 
-export default connect(
-	state => ({
-		songs: getVisibleSongs(state),
-		pagination: getPagination(state),
-	}),
-	{ fetchSongs, likeSong }
+export default compose(
+	withReducers({ songs }),
+	withMiddleware({ songs: songsMiddleware() }),
+	connect(state => ({ songsEntities: getEntity('songs')(state) })),
+	namespacedConnect(
+		(state, { songsEntities }) => ({
+			songs: getVisibleSongs(songsEntities)(state),
+			pagination: getPagination(state),
+		}),
+		{
+			fetchSongs,
+			likeSong,
+		}
+	)
 )(SongsOverview);

@@ -1,11 +1,15 @@
-import { createStore, applyMiddleware, combineReducers } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import { identity } from 'ramda';
+import { makeEnhancer as makeInjectableReducers } from '@redux-tools/reducers';
+import { makeEnhancer as makeInjectableMiddleware } from '@redux-tools/middleware';
 import { composeWithDevTools } from 'redux-devtools-extension/logOnlyInProduction';
 import entities from '@finland/entities';
 import { middleware as apiMiddleware } from '@finland/api';
-import songs, { middleware as songsMiddlware } from '@finland/songs-common';
 import { name, version } from '../../package.json';
 
-const reducer = combineReducers({ entities, songs });
+const reducersEnhancer = makeInjectableReducers();
+const middlewareEnhancer = makeInjectableMiddleware();
+const { injectedMiddleware } = middlewareEnhancer;
 
 const configureStore = preloadedState => {
 	const composeEnhancers = composeWithDevTools({
@@ -15,10 +19,16 @@ const configureStore = preloadedState => {
 	});
 
 	const store = createStore(
-		reducer,
+		identity,
 		preloadedState,
-		composeEnhancers(applyMiddleware(songsMiddlware(), apiMiddleware()))
+		composeEnhancers(
+			reducersEnhancer,
+			middlewareEnhancer,
+			applyMiddleware(injectedMiddleware, apiMiddleware())
+		)
 	);
+
+	store.injectReducers({ entities }, {});
 
 	return store;
 };
