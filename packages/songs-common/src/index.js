@@ -1,4 +1,9 @@
-import { makeSimpleActionCreator, makeActionTypes, makeReducer } from '@redux-tools/actions';
+import {
+	makeSimpleActionCreator,
+	makeActionCreator,
+	makeActionTypes,
+	makeReducer,
+} from '@redux-tools/actions';
 import { ActionTypes as APIActionTypes, requestAPI } from '@finland/api';
 import { mergeEntities } from '@finland/entities';
 import { map, path } from 'ramda';
@@ -11,7 +16,7 @@ export const ActionTypes = makeActionTypes(SCOPE, ['FETCH_SONGS', 'LIKE_SONG', '
 
 export const fetchSongs = makeSimpleActionCreator(ActionTypes.FETCH_SONGS);
 export const likeSong = makeSimpleActionCreator(ActionTypes.LIKE_SONG);
-export const setSongs = makeSimpleActionCreator(ActionTypes.SET_SONGS);
+export const setSongs = makeActionCreator(ActionTypes.SET_SONGS, path(['data']), path(['meta']));
 
 export const getPagination = path(['songs', 'pagination']);
 export const getVisibleIds = path(['songs', 'visibleIds']);
@@ -62,8 +67,11 @@ export const middleware = () => ({ dispatch }) => next => action => {
 		dispatch(mergeEntities(normalizedPayload.entities));
 		dispatch(
 			setSongs({
-				pagination: action.meta.pagination,
-				visibleIds: normalizedPayload.result,
+				data: {
+					pagination: action.meta.pagination,
+					visibleIds: normalizedPayload.result,
+				},
+				meta: action.meta,
 			})
 		);
 	}
