@@ -1,24 +1,94 @@
-import fetch from 'isomorphic-fetch';
+import { makeSimpleActionCreator, makeActionTypes, makeReducer } from '@redux-tools/actions';
+import { ActionTypes as APIActionTypes, requestAPI } from '@finland/api';
+import { mergeEntities } from '@finland/entities';
+import { map, path } from 'ramda';
+import { normalize } from 'normalizr';
+import Schemas from './schemas';
 
-export const fetchPage = ({ page, limit }) =>
-	fetch(
-		`http://localhost:3004/api/songs?_sort=order&_order=asc&_page=${page}&_limit=${limit}`
-	).then(response =>
-		response.json().then(items => ({
-			items,
-			total: Number(response.headers.get('X-Total-Count')),
-		}))
-	);
+export const SCOPE = '@songs';
 
-export const like = song =>
-	fetch(`http://localhost:3004/api/songs/${song.id}`, {
-		method: 'put',
-		headers: {
-			Accept: 'application/json',
-			'Content-Type': 'application/json',
-		},
-		body: JSON.stringify({
-			...song,
-			votes: Number(song.votes) + 1,
-		}),
-	}).then(response => response.json());
+export const ActionTypes = makeActionTypes(SCOPE, ['FETCH_SONGS', 'LIKE_SONG', 'SET_SONGS']);
+
+export const fetchSongs = makeSimpleActionCreator(ActionTypes.FETCH_SONGS);
+export const likeSong = makeSimpleActionCreator(ActionTypes.LIKE_SONG);
+export const setSongs = makeSimpleActionCreator(ActionTypes.SET_SONGS);
+
+export const getPagination = path(['songs', 'pagination']);
+export const getVisibleIds = path(['songs', 'visibleIds']);
+export const getEntities = path(['entities', 'songs']);
+
+export const getVisibleSongs = state => {
+	const visibleIds = getVisibleIds(state);
+	const entities = getEntities(state);
+
+	return visibleIds ? map(id => entities[id], visibleIds) : null;
+};
+
+export const middleware = () => ({ dispatch }) => next => action => {
+	next(action);
+
+	if (action.type === ActionTypes.FETCH_SONGS) {
+		dispatch(
+			requestAPI({
+				data: { endpoint: 'songs', pagination: action.payload },
+				meta: {
+					...action.meta,
+					key: ActionTypes.FETCH_SONGS,
+				},
+			})
+		);
+	}
+
+	if (action.type === ActionTypes.LIKE_SONG) {
+		dispatch(
+			requestAPI({
+				data: {
+					method: 'put',
+					endpoint: `songs/${action.payload.id}`,
+					body: { ...action.payload, votes: action.payload.votes + 1 },
+				},
+				meta: {
+					...action.meta,
+					key: ActionTypes.LIKE_SONG,
+				},
+			})
+		);
+	}
+	if (
+		action.type === APIActionTypes.API_FETCH_SUCCESS &&
+		action.meta.key === ActionTypes.FETCH_SONGS
+	) {
+		const normalizedPayload = normalize(action.payload, Schemas.SONG_ARRAY);
+		dispatch(mergeEntities(normalizedPayload.entities));
+		dispatch(
+			setSongs({
+				pagination: action.meta.pagination,
+				visibleIds: normalizedPayload.result,
+			})
+		);
+	}
+
+	if (
+		action.type === APIActionTypes.API_FETCH_SUCCESS &&
+		action.meta.key === ActionTypes.LIKE_SONG
+	) {
+		const normalizedPayload = normalize(action.payload, Schemas.SONG);
+		dispatch(mergeEntities(normalizedPayload.entities));
+	}
+};
+const initialState = {
+	pagination: {},
+	visibleIds: [],
+};
+
+export default makeReducer(
+	[
+		[
+			ActionTypes.SET_SONGS,
+			(state, action) => {
+				return action.payload;
+			},
+		],
+	],
+	initialState
+);

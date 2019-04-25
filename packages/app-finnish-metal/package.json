@@ -8,14 +8,20 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
-    "@finland/widget-songs-rating": "^0.12.1",
+    "@finland/api": "^0.12.1",
+    "@finland/entities": "^0.12.1",
+    "@finland/songs-common": "^0.12.1",
     "@finland/widget-songs-overview": "^0.12.1",
+    "@finland/widget-songs-rating": "^0.12.1",
     "document-ready": "^2.0.2",
     "prop-types": "^15.6.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-hot-loader": "^4.6.5",
+    "react-redux": "^7.0.2",
     "react-union": "^0.12.1",
-    "react-universal-component": "^4.0.0"
+    "react-universal-component": "^4.0.0",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8"
   }
 }

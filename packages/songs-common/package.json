@@ -8,7 +8,10 @@
 	},
 	"main": "src/index.js",
 	"dependencies": {
-		"isomorphic-fetch": "^2.2.1",
+    "@finland/api": "^0.12.1",
+    "@finland/entities": "^0.12.1",
+    "@redux-tools/actions": "^0.5.0-alpha.4",
+    "normalizr": "^3.3.0",
 		"ramda": "^0.26.1",
 		"ramda-extension": "^0.7.2"
 	}

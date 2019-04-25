@@ -27,13 +27,13 @@ const getPages = ({ currentPage, totalPages, shownPagesCount }) => {
 const Pagination = ({
 	className,
 	kind,
-	total,
+	totalCount,
 	limit,
 	page: currentPage,
 	onChangePage,
 	shownPagesCount,
 }) => {
-	const totalPages = Math.ceil(total / limit);
+	const totalPages = Math.ceil(totalCount / limit);
 
 	const hasNext = currentPage < totalPages;
 	const hasPrev = currentPage > 1;

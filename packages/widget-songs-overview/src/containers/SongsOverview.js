@@ -1,47 +1,32 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect } from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { map } from 'ramda';
-import { fetchPage, like } from '@finland/songs-common';
+import { fetchSongs, likeSong, getVisibleSongs, getPagination } from '@finland/songs-common';
 import SongsOverviewUI from '../components/SongsOverview';
 
-const SongsOverview = ({ limit, initialPage }) => {
-	const [songs, setSongs] = useState();
-	const [total, setTotal] = useState();
-	const [page, setPage] = useState(initialPage);
-
+const SongsOverview = ({ songs, fetchSongs, likeSong, pagination, initialPage, limit }) => {
 	useEffect(() => {
-		fetchPage({ page, limit }).then(({ items, total }) => {
-			setTotal(total);
-			setSongs(items);
-		});
+		fetchSongs({ page: initialPage, limit, order: 'asc', sort: 'order' });
 	}, []);
 
 	const handleOnChangePage = useCallback(
 		page => {
-			fetchPage({ page, limit }).then(({ items, total }) => {
-				setPage(page);
-				setTotal(total);
-				setSongs(items);
-			});
+			fetchSongs({ ...pagination, page, order: 'asc', sort: 'order' });
 		},
-		[limit]
+		[songs]
 	);
 
 	const handleOnClickLike = useCallback(
 		(_, song) => {
-			like(song).then(updated => {
-				setSongs(map(x => (x.id === updated.id ? updated : x), songs));
-			});
+			likeSong(song);
 		},
 		[songs]
 	);
 	return (
 		<SongsOverviewUI
-			page={page}
 			paginationProps={{
-				total,
+				...pagination,
 				limit,
-				page,
 				onChangePage: handleOnChangePage,
 			}}
 			onClickLike={handleOnClickLike}
@@ -53,4 +38,10 @@ const SongsOverview = ({ limit, initialPage }) => {
 SongsOverview.propTypes = { initialPage: PropTypes.number, limit: PropTypes.number };
 SongsOverview.defaultProps = { initialPage: 1, limit: 20 };
 
-export default SongsOverview;
+export default connect(
+	state => ({
+		songs: getVisibleSongs(state),
+		pagination: getPagination(state),
+	}),
+	{ fetchSongs, likeSong }
+)(SongsOverview);
