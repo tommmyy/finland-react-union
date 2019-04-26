@@ -1,35 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+/**
+ * The template for displaying the header
+ *
+ * Displays all of the head element and everything up until the page header div.
+ *
+ * @package Neve
+ * @since   1.0.0
+ */
+
+
+?><!DOCTYPE html>
+<html <?php language_attributes(); ?>>
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-	<title>
-		<?php wp_title( '|', true, 'right' ); ?>
-	</title>
-
-	<?php wp_head();?>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<?php endif; ?>
+	<?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?> <?php echo wp_kses( apply_filters( 'neve_body_data_attrs', '' ), array( '[class]' => true ) ); ?>>
+<?php wp_body_open(); ?>
+<div class="wrapper">
+	<header class="header" role="banner">
+		<a class="neve-skip-link show-on-focus" href="#content" tabindex="0">
+			<?php echo __( 'Skip to content', 'neve' ); // WPCS: XSS ok. ?>
+		</a>
+		<?php
+		neve_before_header_trigger();
+		if ( apply_filters( 'neve_filter_toggle_content_parts', true, 'header' ) === true ) {
+			do_action( 'neve_do_header' );
+		}
+		neve_after_header_trigger();
+		?>
+	</header>
+	<?php do_action( 'neve_before_primary' ); ?>
 
-	<div class="blog-masthead">
-		<div class="container">
-			<nav class="blog-nav">
-				<?php wp_list_pages( '&title_li='); ?>
-			</nav>
-		</div>
-	</div>
+	<main id="content" class="neve-main" role="main">
 
-	<div class="container">
+<?php
+do_action( 'neve_after_primary_start' );
 
-		<div class="blog-header">
-			<h1 class="blog-title"><a href="<?php bloginfo('wpurl');?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
-			<p class="lead blog-description">
-				<?php echo get_bloginfo( 'description' ); ?>
-			</p>
-		</div>
