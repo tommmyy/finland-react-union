@@ -55,7 +55,7 @@ SongsRating.defaultProps = { initialPage: 1, limit: 1 };
 
 export default compose(
 	withReducers({ songs }),
-	withMiddleware({ songsRating: songsMiddleware() }),
+	withMiddleware({ songs: songsMiddleware() }),
 	connect(state => ({ songsEntities: getEntity('songs')(state) })),
 	namespacedConnect(
 		(state, { songsEntities }) => ({
